@@ -1,0 +1,31 @@
+curious-engine.test {
+	# Use Caddy's built-in local CA — no real cert needed.
+	# Run `caddy trust` once to add the CA to your system trust store.
+	tls internal
+
+	# API — Express backend
+	reverse_proxy /api/* localhost:5001
+
+	# Frontend — Vite dev server
+	reverse_proxy /* localhost:5174
+
+	# Enable gzip compression
+	encode gzip
+
+	# Minimal security headers
+	header {
+		X-Frame-Options "SAMEORIGIN"
+		X-Content-Type-Options "nosniff"
+		-Server
+	}
+
+	# Nice error pages
+	handle_errors {
+		respond "{err.status_code} {err.status_text}" {err.status_code}
+	}
+
+	# Suppress Caddy access log noise during dev
+	log {
+		output discard
+	}
+}
