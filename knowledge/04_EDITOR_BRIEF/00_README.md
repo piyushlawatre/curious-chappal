@@ -79,7 +79,7 @@ LLMs are stochastic. Editor briefs won't be byte-identical across runs (creative
 
 1. **Locked-script input.** The script is not being rewritten — only translated to visual direction. The brief carries the full locked script in section 1 so the editor works from one artifact. (Script lineage, sources, and internal QA were removed at v3.0 — they added no production value.)
 2. **Topic-treatment register selection.** Five named treatments (Default / Serious-historical / Science / Current affairs / Historical) — the briefer picks one, and the choice cascades through pacing, music, color, and graphics.
-3. **Mandatory beats inlined.** Half-second pause before payoff. 1.5–2 second quiet beat in second half. 10–14 meaningful visual beats per 90–120 second Anchor. SFX ≤ 4. Impact text ≤ 3 uses.
+3. **Mandatory beats inlined.** Half-second pause before payoff. 1.5–2 second quiet beat in second half. 10–14 meaningful visual beats per 60–120 second Anchor. SFX ≤ 4. Impact text ≤ 3 uses.
 4. **Hard caps on text and graphics.** Maximum 5 thumbnail words. Two text types only (Poppins ExtraBold + Inter Bold). Banned visuals listed inline.
 5. **Three thumbnail concepts, three layouts.** Forces breadth and stops the model from defaulting to one composition style.
 6. **Visual source classification.** Every non-host visual in the shot list is labelled with a source type (AI-gen / Stock / In-house card / Host / Real-footage-only). Real footage is reserved for real people, places, events, archival records, and trademarks — the briefer flags this explicitly. Source screenshots are used only when the source is the proof; otherwise facts become clean text cards. AI generation prompts are the editor's domain and are not written here (removed at v3.3).

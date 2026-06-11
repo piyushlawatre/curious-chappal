@@ -17,7 +17,7 @@ The one real risk of combining audit + rewrite is that an auditor who knows it w
 
 ## How to run
 
-Paste the Stage 2 script (optionally the Stage 1 brief), then this folder's `01_PROMPT.md`. Output's Section II (final script) goes to `FINAL_SCRIPTS/` and feeds `../04_EDITOR_BRIEF/`.
+Paste the Stage 2 script (optionally the Stage 1 brief), then this folder's `01_PROMPT.md`. Output's Section II (final script) goes to `03_AUDIT_AND_FINALIZE/FINAL_SCRIPTS/` and feeds `../04_EDITOR_BRIEF/`.
 
 ## Fallback
 

@@ -78,7 +78,7 @@ const Download = ({ size = 12 }: { size?: number }) => <I size={size} d={<><path
 // for months). We use a "spread across weeks" guard and an asymmetric (higher) cut
 // bar instead of heavier statistics, because at this cadence the fancy math never
 // gets enough samples to pay off. Revisit shrinkage only if a proposed lane ever
-// routinely reaches 5+ Shorts — see FORMAT_LANES.md § Lane graduation (probation).
+// routinely reaches 5+ Shorts — see OPERATIONS.md § Proposed-Lane Promotion (probation).
 const PROPOSED_LANES = ["Forgotten Inventor", "Quiet Monopoly", "Status Game"];
 // The 7 canonical rotation lanes (mirror of server Settings.CANONICAL_ROTATION).
 const CORE_LANES = [
@@ -152,7 +152,7 @@ function computeProbation(history: RetroWeek[]): { channelMedian: number | null;
     } else if (shipped >= CUT_MIN_SHIPPED && shippedWeeks >= PROMOTE_MIN_WEEKS && qualifying < PROMOTE_MIN_WINNERS) {
       // Cut needs BOTH a fair volume (4+) AND a fair spread (2+ different weeks) —
       // four videos in one unlucky week must not read as "drop the lane"
-      // (mirrors FORMAT_LANES.md § Lane graduation).
+      // (mirrors OPERATIONS.md § Proposed-Lane Promotion).
       status = "cut"; statusLabel = "Time to drop it";
       headline = "Not landing after a fair run.";
       action = `${shipped} videos over ${shippedWeeks} week${shippedWeeks === 1 ? "" : "s"} and only ${qualifying} beat your typical video (${channelMedian}/100). It's had a fair chance and isn't connecting. Drop this lane or rethink the angle rather than keep spending slots on it.`;
@@ -184,7 +184,7 @@ function ProbationPanel({ history, rotationLanes, onSwap, swapBusy, swapMsg }: {
   const [replaceFor, setReplaceFor] = useState<Record<string, string>>({});
   // Opportunistic: only surface proposed lanes actually in play (≥1 video) or
   // already graduated into the rotation. If you've never used one, the panel
-  // stays hidden — no clutter. The rule itself lives in FORMAT_LANES.md.
+  // stays hidden — no clutter. The rule itself lives in OPERATIONS.md (§ Proposed-Lane Promotion).
   const inPlay = rows.filter((r) => r.shipped > 0 || rotationLanes.includes(r.lane));
   if (!inPlay.length) return null;
   const tone = (st: ProbationStatus) =>

@@ -16,7 +16,7 @@ const SINGLETON_KEY = "app";
 
 // The 7 canonical rotation lanes — the default weekly-cycle rotation. A proposed
 // lane graduates by SWAPPING IN for one of these via the retro's Probation panel
-// (the cycle always stays 7 lanes; see FORMAT_LANES.md § Lane graduation).
+// (the cycle always stays 7 lanes; see OPERATIONS.md § Proposed-Lane Promotion).
 const CANONICAL_ROTATION = [
   "Real Reason", "Hidden India", "Smart Money/Business", "Science Lite",
   "Sharp Contradiction", "Viral Social Commentary", "One-off",

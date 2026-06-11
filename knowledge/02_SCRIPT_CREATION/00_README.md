@@ -79,14 +79,14 @@ Save the topic-eval brief alongside it (or keep a link), so the script and its a
 LLMs are stochastic — you will not get 100% identical scripts across runs. But this folder is engineered to push run-to-run agreement up to roughly 80–85% (slightly lower than topic-eval because script writing is generative, not gating) by:
 
 1. **Chained input.** The script takes a structured brief, not a vague topic. The format lane, hook candidates, and payoff are already decided.
-2. **Hard length band.** Anchor scripts run 90–120 seconds, 230–280 words. Auto-rejected if out of band; reframe or move formats rather than padding.
+2. **Hard length band.** Anchor scripts run 60–120 seconds, 200–280 words. Auto-rejected if out of band; reframe or move formats rather than padding.
 3. **Narrative functions enforced, order flexible.** Hook, setup/context, turn, mechanism, optional Indian relevance, payoff, and close must land in the strongest topic-native order. Viral Social Commentary uses its lane-specific structure.
 4. **Banned vocabulary inlined.** Hype words, generic creator-tic phrases, generic CTAs, documentary tells — all listed in the prompt, so the model can't drift.
-5. **Self-audit before return.** Model scores its own draft on 10 gates and runs the First-Draft Drift Guard. Must rewrite any beat scoring ≤6, any draft that drops the strongest narrative asset without a stronger replacement, or any draft that feels like a polished explainer.
+5. **Writer's Lock before return.** Model runs the 7 binary Writer's Lock checks (hook survivability, surface logic, carrier, punchline-last, plain word, length + spoken shape, delivery cues) and rewrites any failing beat before returning. Deeper voice/story/citation auditing is deferred to Stage 3.
 6. **External-creator clone check.** If brief flagged adjacency, model must list ≥3 differentiators or rewrite.
 7. **Required reading pinned.** Model reads `../00_SHARED_KB/REFERENCE_SCRIPTS_CORE.md` for routine creative calibration, with `../00_SHARED_KB/REFERENCE_SCRIPTS.md` available as the full creative benchmark for deep recalibration.
 
-If you see drift across runs, check that the model actually read the core Anchor Short references, applied the First-Draft Drift Guard, and ran the clone check.
+If you see drift across runs, check that the model actually read the core Anchor Short references, ran all 7 Writer's Lock checks, and ran the clone check.
 
 ---
 

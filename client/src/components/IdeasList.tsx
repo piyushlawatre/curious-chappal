@@ -12,6 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Popover from "./Popover";
 import { CountUp, staggerContainer, fadeUpItem, pillSpring } from "../lib/motion";
+import { extractBestScript } from "../utils/extractScript";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -1062,46 +1063,39 @@ export default function IdeasList({
   const visibleIdeas = contentTab === "longform"
     ? ideas.filter(i => i.fullFormVideo)
     : ideas.filter(i => !i.fullFormVideo);
-  /** Extract locked spoken script from Editor Brief aiOutput (mirrors EditorBriefOutput.tsx) */
-  function extractSpokenScript(body: string): string {
-    if (!body) return "";
-    // 1. Fenced code block
-    const fenced = body.match(/```(?:md|markdown)?[ \t]*\n([\s\S]*?)```/i);
-    if (fenced) return fenced[1].trim();
-    // 2. Blockquote block after "Locked spoken script" heading
-    const headingMatch = body.match(/\*\*Locked spoken script\b/i);
-    const searchFrom = headingMatch
-      ? body.indexOf("\n", body.indexOf(headingMatch[0])) + 1
-      : 0;
-    const lines = body.slice(searchFrom).split("\n");
-    const bqLines: string[] = [];
-    let inBlock = false;
-    for (const line of lines) {
-      if (/^> /.test(line) || line === ">") {
-        inBlock = true;
-        bqLines.push(line.replace(/^> ?/, ""));
-      } else if (inBlock) break;
+  /** Fetch with retry — a transient "Failed to fetch" must not cost an idea its script. */
+  async function getIdeaWithRetry(id: string, attempts = 3): Promise<IdeaFull> {
+    let lastErr: unknown;
+    for (let i = 0; i < attempts; i++) {
+      try { return await getIdea(id); }
+      catch (err) {
+        lastErr = err;
+        if (i < attempts - 1) await new Promise(r => setTimeout(r, 500 * (i + 1)));
+      }
     }
-    if (bqLines.length) return bqLines.join("\n").trim();
-    return "";
+    throw lastErr;
   }
 
   const exportIdeas = async () => {
     const results: { id: string; title: string; script: string; _debug?: string }[] = [];
     for (const idea of visibleIdeas) {
       try {
-        const full = await getIdea(idea._id);
-        const editorBriefStep = full.steps.find(s => s.id === "04_EDITOR_BRIEF");
-        const editorBriefOutput = editorBriefStep?.aiOutput ?? "";
-        const script = extractSpokenScript(editorBriefOutput);
+        const full = await getIdeaWithRetry(idea._id);
+        const { script, source } = extractBestScript(full.steps);
+        const briefLen = full.steps.find(s => s.id === "04_EDITOR_BRIEF")?.aiOutput?.length ?? 0;
+        const finalLen = full.steps.find(s => s.id === "03_AUDIT_AND_FINALIZE")?.aiOutput?.length ?? 0;
+        // KB v4.3: word count is measured with delivery cues stripped; Anchor band is 200–280 (widened from 230–280 at KB v4.2).
+        const words = script.replace(/\[[^\]]+\]/g, "").trim().split(/\s+/).filter(Boolean).length;
+        const band = words === 0 ? "empty" : words < 200 ? "under" : words > 280 ? "over" : "ok";
+        const hasCues = /\[direct\]/i.test(script);
         results.push({
           id: idea._id,
           title: idea.title || "",
           script,
-          _debug: `step_found:${!!editorBriefStep} aiOutput_len:${editorBriefOutput.length} script_len:${script.length}`,
+          _debug: `source:${source} words:${words} band:${band} cues:${hasCues} brief_len:${briefLen} final_len:${finalLen} script_len:${script.length}`,
         });
       } catch (err) {
-        results.push({ id: idea._id, title: idea.title || "", script: "", _debug: `error:${String(err)}` });
+        results.push({ id: idea._id, title: idea.title || "", script: "", _debug: `error:${String(err)} (after 3 attempts)` });
       }
     }
     const blob = new Blob([JSON.stringify(results, null, 2)], { type: "application/json" });

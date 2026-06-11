@@ -3,18 +3,18 @@ title: "Master Rule — Reference Hierarchy and Core Production Non-Negotiables"
 file: "MASTER_RULE.md"
 role: canonical
 canonical: true
-version: "v3.9"
-related: ["REFERENCE_SCRIPTS.md", "CHANNEL_CONSTITUTION.md", "CONTEXT_PRIMER.md", "LANGUAGE_AND_VOICE.md", "FORMAT_LANES.md", "VIRAL_SOCIAL_COMMENTARY.md", "SOURCE_AND_FACT_RULES.md", "SOURCE_INTEGRITY_AND_CLARITY_GATE.md"]
+version: "v4.3"
+related: ["REFERENCE_SCRIPTS.md", "REFERENCE_SCRIPTS_CORE.md", "CHANNEL_CONSTITUTION.md", "CONTEXT_PRIMER.md", "LANGUAGE_AND_VOICE.md", "FORMAT_LANES.md", "VIRAL_SOCIAL_COMMENTARY.md", "SOURCE_AND_FACT_RULES.md", "SLATE_LEDGER.md"]
 summary: "Single source of truth for KB precedence and stage ownership. REFERENCE_SCRIPTS.md is the creative quality benchmark."
 keywords: ["master rule", "reference hierarchy", "anchor short", "complete Indian English", "factual discipline", "stage ownership"]
-changelog: "v3.9 — ARCHITECTURE PASS (pipeline end-to-end audit 2026-06-10): created SLATE_LEDGER.md (the persisted slate memory the anti-cloning rules depend on) and wired ledger reads into Stage 1 and Stage 3 (read before the self-clone check, append after lock); split Stage 1 into a deterministic MEDIUM scoring pass and a generative HIGH Asset & Angle Discovery pass, with a Drop/Reframe/Upgrade ladder whose rung 1 proactively upgrades a viable-but-weak angle; created STORY_SHAPE_LOCK.md — a binary, blocking story gate (carrier used, open earns a Google, payoff sequenced, thesis once+close) that caps a safe-but-flat script at Generic with the same teeth as the Source-Integrity pillars; de-duplicated the 24 failure modes to a consolidated 19 (folded 6&7 into Adjacent-Category Drift, 11&12 into the Polished-Explainer article-feel test, 20 into Self-Clone) and renumbered all active cross-references; made the clean-room (standalone Part A) audit the default for full-form/strong candidates; replaced Stage 2 10-gate Self-Audit + 22-item Drift Guard with a 6-check Writer's Lock; relaxed universal citation re-fetch to a freshness/contested check when the Stage-1 dossier row is already complete and the claim is not time-relative/contested/Sensitive/audit-named; renamed Lite Audit Pass 1 to '8-Gate Lite Pass'; added the proposed-lane graduation/probation rule (proposed lanes stay out of the fixed 7-slot rotation and earn promotion only after shipping ≥2 Shorts at or above the channel median across ≥2 different weeks; cut after ≥4 shipped across ≥2 weeks with <2 above median — asymmetric, higher cut bar; reads framed early vs solid; deliberately simple counts tuned to the channel's small-sample cadence, revisit shrinkage only at 5+ Shorts/lane — enforced in the weekly retro allocation + a plain-language Probation panel). v3.8 — SILENT-COLLISION PASS: scoped reference precedence to creative calibration; made stage ownership authoritative over summaries; aligned topic gate, length, mental-model, sourcing, audit-correction, technical-term, editor, and thumbnail rules; added a full collision register. v3.7 — CONCRETE-CARRIER PASS: separated sourced propositions from pictureable story carriers; added safe viewer-world comparison hooks, Pictureability Test, observable-behaviour chains, topic-native pivots, audit enforcement, and regression fixtures for abstract-asset substitution. v3.6 — OPTIMISED-VERSION GAP PASS: turned story-before-receipts into a gate when Stage 1 names a narrative asset; removed remaining hook/pivot wording in LANGUAGE_AND_VOICE that implied second-line-only proof and mandatory one-sentence pivots; added positive denominator-reset and finance-term precision examples; added sequential ENABLE → TRIGGER → CLOSE payoff guidance."
+changelog: "See CHANGELOG.md (full version history extracted at v4.0)."
 ---
 
 # Master Rule — Curious Chappal Knowledge Base
 
-**Read this before opening any other KB file.**
+**Read order for a new session: `REFERENCE_SCRIPTS_CORE.md` first for calibration, then this file before everything else (see `00_README.md`).**
 
-**Master KB version: v3.9.** This is the single version stamp for the whole Knowledge Base. Every stage stamps this value on its output (the `KB version:` line). When the KB changes materially, bump it here — not per-stage — so that two outputs are comparable when and only when they share this number.
+**Master KB version: v4.3.** This is the single version stamp for the whole Knowledge Base. Every stage stamps this value on its output (the `KB version:` line). When the KB changes materially, bump it here — not per-stage — so that two outputs are comparable when and only when they share this number.
 
 This file states, in one place, how the Knowledge Base works together. Paste it into any AI session that needs to operate the pipeline correctly.
 
@@ -41,8 +41,7 @@ Every other file in this folder exists to operationalise what the references sho
 - `LANGUAGE_AND_VOICE.md` — the complete Indian English register and how the host sounds. **The authoritative file on language. Read this before any script work.**
 - `FORMAT_LANES.md` — the seven canonical lanes plus three proposed lanes, with lane-selection rules.
 - `VIRAL_SOCIAL_COMMENTARY.md` — full spec for the Viral Social Commentary lane (the one lane that overrides the default mechanism-reveal structure).
-- `SOURCE_AND_FACT_RULES.md` — sourcing, fact-risk grades, and the verification discipline that produces the kind of specificity visible in the references.
-- `SOURCE_INTEGRITY_AND_CLARITY_GATE.md` — mandatory five-pillar final lock gate for source integrity, mechanism honesty, authority placement, first-listen clarity, and temporal freshness.
+- `SOURCE_AND_FACT_RULES.md` — sourcing, fact-risk grades, and the verification discipline that produces the kind of specificity visible in the references. (The former five-pillar gate was absorbed at v4.0: its checks run as Group B of the Stage 3 consolidated audit in `03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md`, owned by this file and `LANGUAGE_AND_VOICE.md`.)
 
 If supporting files disagree, use the owning canonical file for the decision type. Use the references only as the creative-calibration tie-breaker.
 
@@ -54,9 +53,11 @@ There is no "Standard Short" production target. There is no second tier of Short
 
 ## Core Production Rules (Non-Negotiable)
 
-**Every produced Short is an Anchor Short.** 230 to 280 spoken words, 90 to 120 seconds, written for an educated urban Indian viewer aged eighteen to forty in a Tier 1 or Tier 2 city, comfortable in English, watching during a commute or break. This is the hard production envelope. If the idea only works materially shorter or longer, reframe it or move it to another format; do not pad or over-compress it.
+**Every produced Short is an Anchor Short.** 200 to 280 spoken words, 60 to 120 seconds, written for a curious, modern Indian viewer aged eighteen to forty in a Tier 1 or Tier 2 city — who may have below-average English comfort — watching during a commute or break. This is the hard production envelope. If the idea only works materially shorter or longer, reframe it or move it to another format; do not pad or over-compress it.
 
 **The language register is complete Indian English.** The channel is not a Hinglish fact channel. The register is complete Indian English — globally understandable English shaped by Indian context. Hindi or Hinglish as the primary register, internet-speak, "bro / guys / bhai", emojis, and exclamation marks are out. Contractions are rare. Hinglish does not appear in any of the sixteen reference scripts. See `LANGUAGE_AND_VOICE.md` for the full register — that file is the authoritative language guide.
+
+**Audience accessibility is mandatory.** Every script must be understandable to a curious Indian Tier 1 / Tier 2 viewer aged 18–40 who may have below-average English comfort. The viewer is curious and modern, but they should not need academic English, business jargon, trade vocabulary, or prior domain knowledge to understand the video. The goal is not to make the script childish. The goal is to make it **clear, concrete, premium, and easy to follow at voiceover speed**. The full doctrine (sentence length, vocabulary swaps, hard-name cushioning, concrete images) lives in `LANGUAGE_AND_VOICE.md § Below-Average English Comprehension Rule`.
 
 **The script must perform seven narrative functions, not obey one rigid beat order.** A strong Short creates a hook, supplies enough context, turns the viewer's understanding, explains the real mechanism, uses Indian relevance only when natural, delivers the earned insight, and lands a closing line. These functions may interleave or recur when the topic's strongest story spine requires it. A flat conventional-explanation pivot or separate mental-model line is not mandatory when the turn and insight are already clear. Viral Social Commentary still uses its lane-specific debate structure.
 
@@ -103,7 +104,9 @@ Each stage owns one job. The owning canonical file is authoritative for that dec
 - A factual claim stated with certainty when the source does not support that certainty.
 - A reference to "Standard Short" as a calibration target.
 - A reference to AevyTV, Vox, Wendover, Kurzgesagt, or any external creator as a style target or source of truth.
-- A script outside 230–280 words or 90–120 seconds.
+- A script that requires academic English, trade jargon, business jargon, or prior domain knowledge to follow on first listen.
+- A locked script delivered as one dense paragraph instead of anchor-readable beat blocks.
+- A script outside 200–280 words or 60–120 seconds.
 - A closing line that is a motivational quote, a LinkedIn aphorism, or a generic CTA.
 
 ---
@@ -135,4 +138,7 @@ If yes on all six, the script is ready. If no on any, fix the failure before rec
 | `FORMAT_LANES.md` | Seven canonical lanes plus three proposed lanes, with lane-selection rules. |
 | `VIRAL_SOCIAL_COMMENTARY.md` | Full spec for the one lane that overrides the default structure. |
 | `SOURCE_AND_FACT_RULES.md` | Source hierarchy, fact-risk grades, verification discipline. |
-| `SOURCE_INTEGRITY_AND_CLARITY_GATE.md` | Mandatory five-pillar source, clarity, and freshness gate before final lock. |
+| `REFERENCE_SCRIPTS_CORE.md` | Condensed ten-anchor calibration set loaded by stages 2–4. Subordinate to `REFERENCE_SCRIPTS.md`. |
+| `SLATE_LEDGER.md` | Persisted slate memory for the anti-cloning checks (hook / pivot / closer / mid-script shapes). |
+| `CHANGELOG.md` | KB version history. History only; no stage loads it. |
+| `OPERATIONS.md` (KB root) | Publishing cadence, rotation, proposed-lane promotion. Operator-only; no stage loads it. |

@@ -3,7 +3,7 @@ title: "Viral Social Commentary Format"
 file: "VIRAL_SOCIAL_COMMENTARY.md"
 role: canonical
 canonical: true
-version: "v2.0"
+version: "v2.2"
 related: ["REFERENCE_SCRIPTS.md", "FORMAT_LANES.md", "LANGUAGE_AND_VOICE.md", "../01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md", "../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md"]
 summary: "Full spec for the Viral Social Commentary lane, calibrated against References 15 and 16. The debate is the entry point; the structural shift beneath the disagreement is the content. Closes on compressed insight + viewer question + named-audience share."
 keywords: ["viral social commentary", "internet debate", "structural shift", "steelman both sides", "viewer question", "named audience share", "70-hour week", "no kids one kid"]
@@ -47,6 +47,7 @@ A Viral Social Commentary script is incomplete unless it contains all six:
 3. **Side A, steelmanned.** The strongest version of one side's argument, with at least one concrete reason or specific. The script speaks Side A's case the way Side A would speak it — not a strawman.
 4. **Side B, steelmanned.** The strongest version of the other side's argument, with at least one concrete reason or specific. Same standard.
 5. **Both sides are right — inside their own world.** A single beat that grants both sides their internal coherence. Reference 15: "Both sides are right — inside their own economy." Reference 16: "Both arguments have a real audience."
+   *The beat is mandatory; the wording is not.* Never reuse the "Both sides are right — inside their own X" construction from References 15/16 — a reference-shaped Beat 5 with one noun swapped is a clone, not calibration. Write the granting-both-sides line from the topic's own nouns (Reference 16's "Both arguments have a real audience" shows a second valid shape).
 6. **The mechanism beneath.** The structural shift that produces both arguments — the generational economy that no longer overlaps (Ref 15), the lifestyle that became visible for the first time (Ref 16). This is the lane's signature move: the disagreement has a cause, and the cause is bigger than the debate.
 
 The closing line is its own block (see "Closing Line" below).
@@ -69,7 +70,7 @@ This three-line shape is lane-exclusive. Do not use it outside Viral Social Comm
 
 The references show that this lane has two calibration modes, both valid:
 
-**Mode A — Math-anchored debate.** When the viral object has a hard number that is the proof (a wage, a price, a fee, a billing line), keep the math visible in Side B. This is the Carryment-era shape. Use it when the receipt is the argument.
+**Mode A — Math-anchored debate.** When the viral object has a hard number that is the proof (a wage, a price, a fee, a billing line), keep the math visible in Side B. Use it when the receipt is the argument. (Worked example: the Carryment bag-carrier debate — a ₹149-per-hour service whose rate-card wage math was the receipt; see the example table in `../01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md`.)
 
 **Mode B — Structural-shift debate.** When the disagreement is generational, economic, or lifestyle-based and there is no single number that anchors it, the mechanism beneath the disagreement is structural rather than mathematical. References 15 and 16 are this mode.
 
@@ -108,6 +109,7 @@ The discipline is to grant both sides their internal coherence and then point at
 - **Substituting one side's framing.** Giving Side A's reading and skipping Side B (or vice versa) breaks the lane.
 - **Collapsing both sides into a neutral hedge.** "Worker pay is a question that matters" is not steelmanning. Name the specific argument, with a specific reason.
 - **Ending on an aphorism.** "Market ka jugaad ab rate card pe aa gaya" or any writerly kicker breaks the closing shape.
+- **Cloning the reference Beat 5.** "Both sides are right — inside their own clock/kitchen/balance sheet" is References 15/16 with a swapped noun. The granting beat must be written fresh from the topic.
 - **Forced Hindi / Hinglish anywhere.** This lane follows the same language rule as every other lane — complete Indian English. See `LANGUAGE_AND_VOICE.md`.
 - **Treating the viral object as a doorway to a timeless observation.** That is the Real Reason lane. This lane's payoff is *dated* — it names the current structural shift, not a universal principle.
 
@@ -121,7 +123,7 @@ Before returning any Viral Social Commentary script, confirm:
 - The script names the live debate (the internet is split, the comments are arguing, two generations disagree).
 - Side A is steelmanned with at least one concrete reason or specific.
 - Side B is steelmanned with at least one concrete reason or specific.
-- The "both sides are right — inside their own world" beat is present.
+- The granting-both-sides beat is present — written in topic-native wording, not the "inside their own X" construction from References 15/16.
 - The mechanism beneath the disagreement is surfaced — the structural shift that produces both arguments.
 - The close is three beats: one-line compressed insight, single viewer question, one-line nudge to share with a named audience.
 - No timeless-hidden-reason drift. The payoff is dated.

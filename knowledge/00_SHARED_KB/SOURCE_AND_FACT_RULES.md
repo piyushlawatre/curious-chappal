@@ -67,11 +67,24 @@ For every load-bearing claim that names a source, the following must be independ
 3. **Right document type.** A **review** or **commentary** is not a **primary study**. Do not say "a study found" when the source is a review that *cites* a study. Name the actual primary study (e.g. the experiment, its sample, its location) if that is what the claim rests on.
 4. **The source supports the *exact* claim.** Not an adjacent claim. If the paper measured "evaluation and intention to return," the script may not say "spend more" unless the source actually measured spending. Conversely, do not strip a finding the source *does* support out of misplaced caution — verify, then state what is true.
 
-**Rule:** if any of the four cannot be confirmed against the source itself, the citation is reframed to what *can* be confirmed, or the claim is cut. A misdescribed citation is a route-to-rewrite defect at audit (`../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md` Mode 19 — Citation Integrity), never an acceptable note inside a passing score.
+**Rule:** if any of the four cannot be confirmed against the source itself, the citation is reframed to what *can* be confirmed, or the claim is cut. A misdescribed citation is a route-to-rewrite defect at audit (the **CITATION** check in `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md`), never an acceptable note inside a passing score.
 
 **Re-fetch discipline (where the work belongs).** A full independent re-fetch at audit is mandatory when the claim is **time-relative, contested, Sensitive-tier, or named in the audit's fix list.** For a routine load-bearing claim whose **Stage-1 dossier row is already complete** — a resolving URL, a verbatim quoted finding, and an accessed date are all present — Stage 3 performs a lighter **freshness/contested check** (has it been superseded? is it actually contested?) instead of a full re-fetch. This keeps the strictness where risk lives and removes the ceremony where the dossier already proves the citation. It does **not** weaken the no-fetch-no-lock rule: a row that was never properly filled, or whose URL no longer resolves, still requires a full fetch or the claim is treated as unverified. Time-relative and Sensitive-tier claims **always** re-fetch.
 
-**Proof, not attestation (the Source Dossier).** Confirmation is not a checkbox — it is an artifact. For every load-bearing cited claim, fill a dossier row with content obtainable only by fetching the source: `claim | outlet | author | year | type | verbatim finding (quoted) | resolving URL | accessed date`. A vague or fabricated row is itself a failure. The full template and rules live in `SOURCE_INTEGRITY_AND_CLARITY_GATE.md § The Source Dossier`.
+**Proof, not attestation.** Confirmation is not a checkbox — it is an artifact. A vague or fabricated dossier row is itself a failure.
+
+### The Source Dossier (mandatory — single owner: this file)
+
+The CITATION check does not pass until a dossier row is filled for **every** load-bearing cited claim. The row must contain content that can only be obtained by actually fetching the source:
+
+| Claim (one line) | Outlet / journal | Author | Year | Type (primary study / review / report / news / primary doc) | **Verbatim finding** (the exact sentence the claim rests on, in quotes) | URL (must resolve) | Accessed |
+|---|---|---|---|---|---|---|---|
+
+Rules for the dossier:
+- The **verbatim finding** must be a real quoted sentence from the source, and the script claim a faithful plain-English rendering of it — never broader than the evidence; narrower only when the narrowing is accurate and does not distort.
+- The **URL must resolve** to the named source. A 404, homepage redirect, or paywall/403 means the source was not fetched — apply the no-fetch-no-lock fallback above.
+- "Confirmed against the upstream Stage-1 note" is **not** acceptable — the upstream note is a lead, not proof. Fill the dossier from the source itself.
+- An empty cell, a paraphrase in place of the verbatim finding, or "could not access" in any row = CITATION FAIL.
 
 **No fetch, no lock (inaccessible-source fallback).** If a load-bearing source genuinely cannot be fetched (paywall, 403, dead link), the claim is treated as unverified. Re-source it from an accessible source, soften it to what an accessible source supports, or cut it — never pass it on the strength of an upstream note. "Source inaccessible, passed anyway" is forbidden.
 
@@ -182,4 +195,4 @@ Never keep a load-bearing claim because it sounds good.
 - **Stage 3 Part B (Finalize)** verifies, softens, reframes, or cuts every audit-flagged fact risk before lock, using the independent artifact when Sensitive-tier.
 - **Stage 4 (Editor Brief)** does not repair facts. If the locked script still has unresolved fact, legal, or safety issues, Stage 4 returns the brief as terminal.
 
-A script with weak factual grounding cannot exceed the audit's 70 / 100 cap, regardless of writing quality. *(This cap is enforced in the Stage 3 audit rubric — see `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md`. It is noted here only as a downstream consequence of sourcing discipline.)*
+A script with weak factual grounding is graded **Fact-risky** and cannot lock until every flagged claim is verified, softened, or cut, regardless of writing quality. *(Enforced by the Group B safety checks in `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md`.)*

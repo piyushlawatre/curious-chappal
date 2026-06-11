@@ -9,8 +9,6 @@ import sharedLanguageAndVoice from "@knowledge/00_SHARED_KB/LANGUAGE_AND_VOICE.m
 import sharedSourceAndFactRules from "@knowledge/00_SHARED_KB/SOURCE_AND_FACT_RULES.md?raw";
 import sharedReferenceScripts from "@knowledge/00_SHARED_KB/REFERENCE_SCRIPTS.md?raw";
 import sharedReferenceScriptsCore from "@knowledge/00_SHARED_KB/REFERENCE_SCRIPTS_CORE.md?raw";
-import sharedSourceIntegrityGate from "@knowledge/00_SHARED_KB/SOURCE_INTEGRITY_AND_CLARITY_GATE.md?raw";
-import sharedStoryShapeLock from "@knowledge/00_SHARED_KB/STORY_SHAPE_LOCK.md?raw";
 import sharedSlateLedger from "@knowledge/00_SHARED_KB/SLATE_LEDGER.md?raw";
 
 import topicValidationGuide from "@knowledge/01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md?raw";
@@ -102,11 +100,8 @@ export const knowledgeBaseByStep: Record<WorkflowStepId, KnowledgeBaseFile[]> = 
       path: "00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md",
       content: sharedViralSocialCommentary,
     },
-    {
-      path: "00_SHARED_KB/SOURCE_INTEGRITY_AND_CLARITY_GATE.md",
-      content: sharedSourceIntegrityGate,
-    },
-    { path: "00_SHARED_KB/STORY_SHAPE_LOCK.md", content: sharedStoryShapeLock },
+    // (SOURCE_INTEGRITY_AND_CLARITY_GATE.md and STORY_SHAPE_LOCK.md were deleted at
+    // KB v4.1 — their checks live inside 03_AUDIT_RUBRIC.md, already attached above.)
     { path: "00_SHARED_KB/SLATE_LEDGER.md", content: sharedSlateLedger },
   ],
   // Stage 4: editor brief; uses REFERENCE_SCRIPTS_CORE (not full)

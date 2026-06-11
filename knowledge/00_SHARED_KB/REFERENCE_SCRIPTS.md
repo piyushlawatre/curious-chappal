@@ -3,7 +3,7 @@ title: "Reference Scripts — Quality Benchmark"
 file: "REFERENCE_SCRIPTS.md"
 role: reference
 canonical: true
-version: "v2.14"
+version: "v2.15"
 related: ["MASTER_RULE.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md", "../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md", "FORMAT_LANES.md", "VIRAL_SOCIAL_COMMENTARY.md"]
 summary: "The sixteen Anchor Short scripts in this file are the quality benchmark across the seven canonical format lanes (Hidden India, Science Lite, Smart Money/Business, Real Reason, Sharp Contradiction, Viral Social Commentary, One-off) plus three proposed lanes (Forgotten Inventor, Quiet Monopoly, Status Game). Every rule, checklist, and pattern in this document exists only to protect and replicate the tone, structure, pacing, and Indian-English short-form style those scripts demonstrate."
 keywords: ["reference scripts", "anchor", "quality benchmark", "calibration", "Indian English", "hook craft", "mechanism", "mental model", "anti-cloning"]
@@ -35,9 +35,9 @@ The viewer the reference scripts are written for can be read off the scripts the
 
 The scripts assume a reader who can absorb "Rockefeller University's biology lab", "carboxylic acids", "GLP-1", "incumbent capture", and "remittances" on first listen because unfamiliar terms are explained immediately. They assume the reader already recognises lakh, crore, Mangalyaan, Raga Bhairavi, dengue, Tipu Sultan, and the Gulf job market without explanation. They assume the reader has heard of Nokia, the iPhone, Samsung, NASA, ESA, Diet Coke, WHO treatment guidelines, KitchenAid, and De Beers — all named without preface.
 
-They assume a 90 to 120 second window, high information tolerance per second, and zero patience for filler.
+They assume a 60 to 120 second window, high information tolerance per second, and zero patience for filler.
 
-That maps to an educated urban Indian, broadly eighteen to forty, comfortable in English, watching during a commute or break. The scripts are written to that reader. New scripts should be too.
+That maps to an educated urban Indian, broadly eighteen to forty, who may have below-average English comfort, watching during a commute or break. The scripts are written to that reader. New scripts should be too.
 
 What the scripts do not do, anywhere: open with a greeting, address the viewer as "guys" or "bro", drop an emoji, switch to Hinglish, or pause to flatter the audience. New scripts should not either.
 
@@ -98,12 +98,12 @@ Indian context appears where the topic genuinely requires it. Seven of the sixte
 
 ## Length and Pacing
 
-The sixteen reference scripts run between **236 and 277 spoken words**. Voiced at the channel's natural pace, that lands in the **90 to 120 second** window.
+The sixteen reference scripts run between **236 and 277 spoken words**. Voiced at the channel's natural pace, that lands in the **90 to 120 second** range — comfortably inside the wider 200–280 word / 60–120 second production envelope every new script must hit.
 
 Target band for a new Anchor Short:
 
-- **230 to 280 words** is the hard Anchor Short envelope.
-- **90 to 120 seconds** spoken.
+- **200 to 280 words** is the hard Anchor Short envelope.
+- **60 to 120 seconds** spoken.
 - If the idea only works materially shorter or longer, reframe it or move it to another format.
 
 Do not stretch a script to sound important. Do not compress a complex topic until it becomes misleading.
@@ -112,7 +112,7 @@ Do not stretch a script to sound important. Do not compress a complex topic unti
 
 ## Retention Mechanics
 
-The 230 to 280 word / 90 to 120 second window only holds if attention does not break. The reference scripts hold attention through six specific moves, each visible in the scripts.
+The 200 to 280 word / 60 to 120 second window only holds if attention does not break. The reference scripts hold attention through six specific moves, each visible in the scripts.
 
 1. **The first three seconds carry the curiosity gap, not disposable setup.** Usually this is a claim or contrast: "Mosquitoes do not bite randomly. They hunt specific people." (Ref 2) / "In 2007, Nokia controlled half the global smartphone market." (Ref 4) / "Britain's most decorated female spy in the Second World War was an Indian princess." (Ref 1) / "Ozempic is a hormone your body already produces." (Ref 8). A short viewer-world comparison may also pass when the contrast itself creates the causal question. No greeting, no "today we will look at", no "imagine". If the opener could be moved to paragraph two without loss, it has failed.
 
@@ -384,7 +384,7 @@ A script fails regardless of score if it:
 - Opens with filler, a vague hook, or a rhetorical "imagine".
 - Ends on a motivational quote or a paragraph-long wrap-up.
 - Cannot be read aloud naturally.
-- Falls outside the hard 230–280 spoken-word Anchor envelope.
+- Falls outside the hard 200–280 spoken-word Anchor envelope.
 - Uses Hindi, Hinglish, slang, or emojis.
 
 ---
@@ -401,7 +401,7 @@ Before approving a script, ask:
 6. Is the closing line one to two sentences, compressed, and earned?
 7. Is the language complete Indian English by default, with no Hinglish or slang?
 8. Is Indian relevance natural to the topic, or absent if the topic does not need it?
-9. Is the script within the hard 230 to 280 word Anchor envelope?
+9. Is the script within the hard 200 to 280 word Anchor envelope?
 10. With proper nouns removed, does the draft still feel distinct from all sixteen references?
 11. **Average Viewer Test.** Would an educated twenty-five-year-old in Pune, Indore, Jaipur, Coimbatore, or Lucknow understand this on first listen, while commuting, without pausing to decode any word? If not, revise.
 12. **Premium-but-Accessible Test.** Does this feel smarter than a normal reel but easier than a long-form documentary? If it feels like either of those, revise.

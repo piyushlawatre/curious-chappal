@@ -31,7 +31,7 @@ Optionally, immediately after, separated by a clear marker:
 
 Auditing and rewriting in one pass creates one specific risk: an auditor who knows it will have to fix what it flags has an incentive to flag less. This prompt eliminates that risk with a hard wall:
 
-1. **PART A (Audit) runs first and in full.** You are the strict Auditor. Score every gate and every failure mode as if a *different person* — not you — will have to do the rewrite. You do not soften, skip, or pre-excuse any finding because fixing it will be work.
+1. **PART A (Audit) runs first and in full.** You are the strict Auditor. Run every check as if a *different person* — not you — will have to do the rewrite. You do not soften, skip, or pre-excuse any finding because fixing it will be work.
 2. **The audit is LOCKED the moment Part A output is written.** In Part B you may NOT silently weaken, delete, downgrade, or re-interpret a finding to make the rewrite easier. If newly fetched evidence proves a finding factually wrong or inapplicable, log an explicit `Audit Finding Correction` with the old finding, new evidence, and corrected action. You may also ADD a finding if Part B surfaces a new defect.
 3. **If you cannot do Part A honestly without thinking ahead to the fix, stop, discard any rewrite ideas, and complete Part A as a clean, standalone audit before you allow yourself to touch Part B.**
 
@@ -52,15 +52,15 @@ This targets the extra independence at the strongest ideas without paying the co
 ## REQUIRED READING (read in this order, fully, before Part A)
 
 1. `../00_SHARED_KB/CONTEXT_PRIMER.md` — channel identity primer.
-2. `03_AUDIT_RUBRIC.md` — Lite Audit (19 consolidated failure modes) + 12-category Full Rubric + failure modes + calibration anchors + Verdict Labels. **Central document for Part A.**
+2. `03_AUDIT_RUBRIC.md` — the **Consolidated Audit**: 16 named checks (Group A story/voice + Group B safety), Required Evidence (a)–(f), verdict mapping, Final Disposition, calibration anchors, Legacy Map. **Central document for Part A.**
 3. `03_REWRITE_SOP.md` — when to rewrite/reject/keep, hook-sharpening, payoff-strengthening, register fixes, fact-check workflow, banned patterns, Final Approval Checklist. **Central document for Part B.**
 4. `../00_SHARED_KB/FORMAT_LANES.md` — lane-fit check (Part A) and lane preservation (Part B).
 5. `../00_SHARED_KB/LANGUAGE_AND_VOICE.md` — voice rules, banned vocab, host archetype. Source of truth for identity scoring and register discipline.
 6. `../00_SHARED_KB/SOURCE_AND_FACT_RULES.md` — source hierarchy, source discipline, fact-risk grading and resolution.
 7. `../00_SHARED_KB/REFERENCE_SCRIPTS_CORE.md` — voice calibration. Use Anchor Short References 1–8 as the active voice target. (Full 16-script `../00_SHARED_KB/REFERENCE_SCRIPTS.md` is the full creative benchmark; open it only for a borderline creative call.)
-8. `../00_SHARED_KB/SOURCE_INTEGRITY_AND_CLARITY_GATE.md` — the mandatory final gate (5 pillars, binary): source integrity, mechanism honesty, authority placement, instant clarity including mental math, and temporal freshness. **Run before any lock.**
+8. `../00_SHARED_KB/SOURCE_AND_FACT_RULES.md § Citation Integrity` + `§ The Source Dossier` — already in item 6; re-read these two sections specifically before running the Group B safety checks. (The former five-pillar gate was absorbed at KB v4.0 — its checks are Group B of the rubric, owned by `SOURCE_AND_FACT_RULES.md` and `LANGUAGE_AND_VOICE.md`.)
 9. `../00_SHARED_KB/SLATE_LEDGER.md` — the persisted slate memory (last ~8–12 Shorts with hook/pivot/closer shapes). Read it before the self-clone / closer-variety check; append this script's row after lock.
-10. `../00_SHARED_KB/STORY_SHAPE_LOCK.md` — the mandatory binary story gate (4 PASS/FAIL checks). **Run at lock alongside the five source/clarity pillars; any FAIL caps the verdict at Generic and forces Rewrite Trigger = Yes.**
+10. `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark` + `§ The Instant Comprehension Gate` + `§ Authority Placement` — already in item 5; these own the COMPREHENSION and AUTHORITY checks. (The former Story-Shape Lock was absorbed at KB v4.0 — its checks live in HOOK, MECHANISM, PAYOFF, and PATTERN-FRESHNESS, with the Calibration rule stated in `03_AUDIT_RUBRIC.md`.)
 
 **Conditional:** If the declared lane is **Viral Social Commentary**, OR the topic is a live viral internet debate even if another lane was declared, also read `../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md` — mandatory audit overlay (Part A) and rebuild spec (Part B). Skip it otherwise.
 
@@ -76,55 +76,50 @@ You are the Script Auditor. You score against a fixed rubric and decide the rout
 
 1. Confirm all required files are read.
 2. Parse the script input. Confirm all 15 sections are present. If any section is missing, return `Terminal — incomplete Stage 2 script package. Rerun 02_SCRIPT_CREATION.` and stop. Do not reconstruct or regenerate Stage 2.
-3. Decide audit mode: **Lite Audit** (default) or **Full 12-Category Audit** (escalation) — see "Audit Mode Selection".
-4. Run the chosen audit. Score every gate or category numerically. **Score before you narrate.**
-5. Run the 19 Failure Mode Spot-Checks. Mode 7 includes the four-part Polished Explainer/Narrative-Force detector; mode 18 includes source-register, mental-math, denominator/reference stability, and finance-language precision; mode 19 enforces citation integrity. Each = Pass/Fail with evidence. A Mode 7 pass without evidence for (a)-(d) is auto-fail.
-6. Run the **Viral Social Commentary Audit Overlay** from `../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md` when (a) declared lane is Viral Social Commentary, or (b) topic is a live viral internet debate even if another lane was declared. Any missing overlay item = lane drift; set Failure Mode 4 = Yes, Rewrite Trigger = Yes, add the missing item to the Fix List.
-7. Run the External-Creator Clone Drift Test (`03_AUDIT_RUBRIC.md § Lite Audit § Pass 2 — External-Creator Clone Drift`). Then read `../00_SHARED_KB/SLATE_LEDGER.md` and run the Self-Clone / Closer-Variety check against the last several rows: strip proper nouns and compare the hook/pivot/closer skeleton; if the last two Shorts closed on the two-part inversion, this one must close differently.
+3. Run the **Consolidated Audit** (`03_AUDIT_RUBRIC.md`): all 16 named checks — Group A (HOOK, STRUCTURE, MECHANISM, PAYOFF, VOICE, COMPREHENSION, PATTERN-FRESHNESS, INDIAN-RELEVANCE, MODEL-INTEGRITY), then Group B (CITATION, AUTHORITY, CONTESTED-CLAIMS, HARD-NUMBERS, TEMPORAL-FRESHNESS). Record PASS/FAIL with one-line evidence per check. **Check before you narrate.**
+4. Paste the Required Evidence (a)–(f) blocks verbatim (hook / spoken cadence / article-feel / concreteness carrier / self-clone vs ledger / comprehension). An un-evidenced PASS auto-converts to FAIL.
+5. Apply the rubric's Calibration rule throughout: a check reading that would fail one of the ten anchor references is a miscalibrated reading — recalibrate the reading, not the script.
+6. Run the **Viral Social Commentary Audit Overlay** from `../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md` when (a) declared lane is Viral Social Commentary, or (b) topic is a live viral internet debate even if another lane was declared. Any missing overlay item = lane drift; Rewrite Trigger = Yes; add the missing item to the Fix List.
+7. Complete PATTERN-FRESHNESS: read `../00_SHARED_KB/SLATE_LEDGER.md` and run the self-clone / closer-variety check against the last several rows (strip proper nouns, compare the hook/pivot/closer skeleton; if the last two Shorts closed on the two-part inversion, this one must close differently), plus the external-creator clone test (≥3 of hook/framing/mechanism angle/close/visual differ).
 8. Run the Language Register Check (Complete Indian English / register drift).
 9. Verify chain integrity if the topic-eval brief was provided: do the script's lane, payoff, hook, strongest source-backed narrative asset, and concrete story carrier match what the brief approved? If the asset or carrier was dropped, require evidence the replacement is more watchable.
 10. Run the Temporal Freshness + Current-Function check on every time-relative word in the script (`latest`, `currently`, `today`, `this year`, `now`, equivalents) and every exact older-period fact used as present proof. Re-fetch a primary source on the audit date.
-11. Generate the Fix List — specific line-level changes, each tagged to a failed gate or failure mode.
-11b. Run the **Story-Shape Lock** (`../00_SHARED_KB/STORY_SHAPE_LOCK.md`) — four binary checks (carrier used in first third; open earns a Google; payoff sequenced/single-true-cause not flat-additive; thesis once + close not hammered). Record each PASS/FAIL with evidence. **Any FAIL caps the verdict at Generic and sets Rewrite Trigger = Yes.**
+11. Generate the Fix List — specific line-level changes, each tagged to a failed named check.
+11b. Confirm the structural story checks (HOOK, MECHANISM, PAYOFF, PATTERN-FRESHNESS) carry their evidence. **Any structural FAIL caps the verdict at Generic and sets Rewrite Trigger = Yes** — story blocks with the same force as safety.
 12. Decide the verdict using `03_AUDIT_RUBRIC.md § Verdict Labels`, then run the **Final Disposition** gate.
 13. Set the **Rewrite Trigger** (ROUTE_TO_REWRITE: Yes / No).
 14. Run the Part A Self-Verification checklist.
 15. **Write the complete Section I (Audit Report) output now, then treat it as LOCKED.**
 
-## Audit Mode Selection
+## Sensitive-Tier Escalation (replaces the former Lite/Full mode selection)
 
-Use Lite Audit (default) unless one or more is true, then run Full 12-Category:
-- Among the first 10 Shorts produced (calibration period).
-- Monthly review of past Shorts.
+There is **one audit** — the 16-check Consolidated Audit, every script. The former Full-mode triggers now escalate the CITATION check to **Sensitive tier** (the Source Dossier is filled by a verification pass independent of writer and auditor — per `../00_SHARED_KB/SOURCE_AND_FACT_RULES.md § Citation Integrity`):
 - Sponsored / `#AD` Short.
 - Current-affairs Short with named individuals or specific factual claims.
-- The Lite Audit already failed this script once and a rewrite was attempted.
-- The upstream brief had Fact-risk **High** or external-creator clone risk **High** (if provided), OR the script's own Fact-Check Notes contain any claim at tier 5–6 marked **Needs verify**.
+- Upstream Fact-risk **High**, OR any tier 5–6 claim marked **Needs verify** in the script's Fact-Check Notes.
+- A script that already failed this audit once and was rewritten.
 
-State the selected mode at the top of Section I. If escalating, state which trigger fired.
+State at the top of Section I whether Sensitive-tier escalation applies and which trigger fired.
 
-## Verdict Labels (use exactly these)
+## Verdict Labels (derived from the checks — full mapping in `03_AUDIT_RUBRIC.md § Verdict Labels`)
 
-- **Strong** — avg 8.0+. Direct finalization. Rewrite Trigger = **No**.
-- **Good but needs polish** — avg 7.0–7.9. Line edits + fact verification via Direct finalization. Rewrite Trigger = **No**.
-- **Generic** — avg 5.5–6.9. Major rewrite. Rewrite Trigger = **Yes**.
-- **Off-brand** — any score; fails Channel Identity Fit or high clone drift. Rewrite Trigger = **Yes**.
-- **Fact-risky** — any score; fails Fact Risk or has unverified load-bearing claim. Rewrite Trigger = **Yes** if the claim can't be sourced as written; otherwise **No** and Direct finalization handles the repair.
-- **Reject** — avg under 5.5 OR multiple failure modes. Rewrite Trigger = **Yes**. Part B attempts an AI-owned reframe if defensible; drop only when no clean reframe exists.
+- **Strong** — 16/16 PASS (+ overlay if applicable). Rewrite Trigger = **No**, Direct finalization.
+- **Good but needs polish** — Group B all PASS; ≤2 Group A FAILs, each line-level fixable. Rewrite Trigger = **No**.
+- **Generic** — any FAIL on HOOK, STRUCTURE, MECHANISM, PAYOFF, or PATTERN-FRESHNESS; or >2 Group A FAILs. Rewrite Trigger = **Yes**.
+- **Off-brand** — VOICE FAIL. Rewrite Trigger = **Yes**.
+- **Fact-risky** — any Group B FAIL. Rewrite Trigger = **Yes** if the claim can't survive as written; otherwise **No** and Direct finalization repairs (verify / soften / cut).
+- **Reject** — pervasive failure or the idea fails the Final Disposition re-score. Rewrite Trigger = **Yes**; AI reframe if defensible; drop only when no clean reframe exists.
 
-If **Polished Explainer Drift** (mode 7), **Underdeveloped Surface Logic** (9), **Mechanism Collapse** (10), **Punchline Dilution** (11), **Final-Rule Oversimplification** (12), **Labelled-Not-Concrete Indian Context** (13), **Vocabulary Drift** (14), or the **Viral Social Commentary overlay** fails, Rewrite Trigger = **Yes** even when facts, structure, and payoff score well. Mode 7 verdict = `Generic` unless identity also fails (`Off-brand`). Modes 9-13 and overlay failures = `Generic` unless category scores indicate otherwise.
+A failed Viral overlay = Rewrite Trigger **Yes** (lane rewrite), verdict at most Generic. A factually clean script that fails VOICE or a structural story check is **not Strong** — story blocks with the same force as safety.
 
-Any **Story-Shape Lock** FAIL (`../00_SHARED_KB/STORY_SHAPE_LOCK.md`) caps the verdict at **Generic** and sets Rewrite Trigger = **Yes**, regardless of how well facts, structure, and execution score. Story-shape now blocks a lock with the same force as a Source-Integrity pillar.
+**Be strict. Do not adjust results upward to be kind.**
 
-**Be strict. Do not adjust scores upward to be kind.**
+## Check discipline (mandatory)
 
-## Scoring discipline (mandatory)
-
-- Score gates/categories **before** writing narrative justification.
-- 10/10 = best-in-class, no fixable weakness. Reserve it. If everything scores 9–10, your bar is too low.
-- Lite gates are Yes/No only. Full categories are 1–10 against the rubric's calibration anchors.
-- Channel Identity Fit is scored against `../00_SHARED_KB/LANGUAGE_AND_VOICE.md`, not taste.
-- If the script carries a Stage 1 mental model that is fake/forced, flag Chain Integrity. If absent, carry `N/A — optional bonus`.
+- Record PASS/FAIL **before** writing narrative justification.
+- Every PASS carries one line of evidence; the six Required Evidence blocks are pasted verbatim. An un-evidenced PASS auto-converts to FAIL.
+- VOICE is checked against `../00_SHARED_KB/LANGUAGE_AND_VOICE.md`, not taste. If everything passes effortlessly, re-run VOICE and PATTERN-FRESHNESS — those two catch the failures a kind auditor waves through.
+- If the script carries a Stage 1 mental model that is fake/forced, MODEL-INTEGRITY fails and Chain Integrity is flagged. If absent, carry `N/A — optional bonus`.
 
 ## Search discipline at audit
 
@@ -149,28 +144,28 @@ Read the Disposition, Rewrite Trigger, and verdict you just locked:
 ## B. Execution order (do NOT change)
 
 1. Index every script line by beat (Hook / Setup / Reveal / Payoff / Identity / CTA).
-2. From the locked audit, extract: verdict; failure modes detected (esp. 9, 13-17); Viral overlay status; generic/off-brand lines; Fix List; Fact-Check Risks; Final Recommendation.
+2. From the locked audit, extract: verdict; failed checks (Group A and Group B by name); Viral overlay status; generic/off-brand lines; Fix List; Fact-Check Risks; Final Recommendation.
 3. Classify finalization scope using `03_REWRITE_SOP.md § When to Rewrite / Reject / Keep Mostly Untouched` and the route above.
 4. If scope is Major rewrite, run `03_REWRITE_SOP.md § Major Rewrite: Story-Preserving Accuracy Protocol`: inventory the original's strongest narrative assets; run claim-repair and narrative-evidence searches; record the asset the rewrite will preserve.
 5. Apply the Fix List line by line. Use each suggested replacement if it lands; if weak, write a stronger one and explain in Rewrite Accountability.
-6. **Polished Explainer Drift (mode 7):** rebuild using the four-part detector in `03_AUDIT_RUBRIC.md § Failure Mode 7 (a)-(d)`, including Narrative Force.
+6. **VOICE / article-feel failures:** rebuild using `03_AUDIT_RUBRIC.md § Required Evidence (a)–(d)` and `03_REWRITE_SOP.md § How to Fix Polished Explainer Drift`.
 7. **Viral lane drift:** if the overlay failed, rebuild with the debate payload + viewer-verdict close.
-8. **Mode mappings:** apply flagged modes, including Mode 18 mental-math/reference stability and authority placement.
+8. **Per-check fixes:** apply the fix guidance for every failed check, including COMPREHENSION (mental-math/reference stability) and AUTHORITY (placement).
 9. Build a second viable full treatment when a materially different safe spine exists; run the Best-Available-Version comparison and document why the selected treatment wins.
 10. Address every Fact-Check Risk by re-fetching load-bearing sources; re-fetch time-relative claims and exact older-period evidence functioning as present proof; verify evidence scope. If unverifiable, soften or cut.
 11. Run the **Rewrite Regression Check** for every Major rewrite: original vs final on hook pull, concrete imagery, cognitive load, payoff, and factual honesty. Repair any unjustified regression.
-12. Run a **cold-read final audit** on the finished rewrite as fresh input. Do not rely on Rewrite Accountability explanations. All Lite gates, every failure mode, the five source/clarity pillars, and the four Story-Shape Lock checks must pass.
+12. Run a **cold-read final audit** on the finished rewrite as fresh input. Do not rely on Rewrite Accountability explanations. All 16 consolidated checks must pass.
 13. If Part A flagged Medium/High external-creator clone risk, confirm the rewrite differs in ≥3 dimensions.
-14. Confirm length within the Anchor band.
+14. Confirm length within the Anchor band **numerically**: strip every delivery cue and count the words — 200–280 or the script cannot lock; state the count in Section II § 8. Also confirm delivery cues are present and drawn only from the seven canonical tokens (`[direct]`, `[no smile]`, `[stress]`, `[slow]`, `[drop voice]`, `[beat]`, `[pause]`), with the closer carrying `[drop voice]`.
 15. Confirm chain integrity, including narrative-asset preservation.
 16. Fill Section II, then run Part B Self-Verification.
-17. **After the script is locked PRODUCTION-READY, record its Slate Ledger row** (date | topic | lane | hook shape | pivot shape | closer shape) so the next Stage 1 and Stage 3 inherit this Short as slate memory. If you can write files in this environment, append it as the new top data row of `../00_SHARED_KB/SLATE_LEDGER.md`. If you cannot write files (e.g. this prompt was run in a chat and the output is pasted back into the orchestrator app), **emit the row in Section II § 18 as a copy-ready line** for the operator to paste into the ledger. Use the shape vocabulary defined in `SLATE_LEDGER.md`. If the script was not locked (terminal/DROP), do not record a row — write "§ 18: N/A — not locked."
+17. **After the script is locked PRODUCTION-READY, record its Slate Ledger row** (date | topic | lane | hook shape | pivot shape | closer shape | mid-script template) so the next Stage 1 and Stage 3 inherit this Short as slate memory. If you can write files in this environment, append it as the new top data row of `../00_SHARED_KB/SLATE_LEDGER.md`. If you cannot write files (e.g. this prompt was run in a chat and the output is pasted back into the orchestrator app), **emit the row in Section II § 18 as a copy-ready line** for the operator to paste into the ledger. Use the shape vocabulary defined in `SLATE_LEDGER.md`. If the script was not locked (terminal/DROP), do not record a row — write "§ 18: N/A — not locked."
 
 ## B. Hard constraints (mandatory)
 
 - **Preserve** the topic (changing it = a new script, not a rewrite); the format lane (unless the audit flagged a lane error or the Viral lane clearly applies); the hook+payoff combo if the audit didn't flag both (sharpen, don't replace); and fact-checked claims already verified.
 - **Optimise without churn:** preserve strong lines and facts, but allow broader changes when the Best-Available-Version comparison proves a materially stronger safe treatment.
-- **Length & structure:** Anchor 90–120s / 230–280 words; all narrative functions present in the strongest topic-native story spine.
+- **Length & structure:** Anchor 60–120s / 200–280 words; all narrative functions present in the strongest topic-native story spine.
 - **Register:** complete Indian English; no Hindi/Hinglish structural work. If it reads written not spoken, break into vertical lines + spoken connectives.
 - **Banned (zero instances):** hype words, generic creator tics, generic CTAs, documentary/lecture tells (source: `../00_SHARED_KB/LANGUAGE_AND_VOICE.md`); host-as-expert framing; motivational drift; forced mental model; false certainty; undefined high-register vocabulary (run the Plain Word Test per `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark` — Class 10–12 ceiling applies).
 - **Unverifiable claims get cut.** The final script cannot ship with `Needs verify` claims.
@@ -185,8 +180,8 @@ Read the Disposition, Rewrite Trigger, and verdict you just locked:
 
 ```
 # Script Audit: <topic name>
-*Audited on <YYYY-MM-DD>. KB version: v3.9. Auditor: <model name>.*
-*Audit mode: <Lite | Full 12-Category — escalation reason: …>*
+*Audited on <YYYY-MM-DD>. KB version: v4.3. Auditor: <model name>.*
+*Sensitive-tier escalation: <No — routine | Yes — trigger: …>*
 *Script source: 02_SCRIPT_CREATION draft dated <YYYY-MM-DD>.*
 *Chain check: <Pass | Fail — describe drift> (if brief provided)*
 
@@ -196,94 +191,60 @@ One-line reasoning (≤25 words).
 **Rewrite Trigger (ROUTE_TO_REWRITE):** Yes | No
 **Final Disposition (PASS | FIX | DROP):** <one> — if DROP, one-line reason (see § 13 + `03_AUDIT_RUBRIC.md § Final Disposition`).
 
-## 2. Lite Audit (8 gates, Yes/No)
-| # | Gate | Pass? | Evidence (one line) |
-|---|------|-------|---------------------|
-| 1 | Hook stack lands in 1–5s | Y/N | … |
-| 2 | Simple curiosity gap | Y/N | … |
-| 3 | Clear payoff | Y/N | … |
-| 4 | Relatable or surprising angle | Y/N | … |
-| 5 | Easy at scroll speed | Y/N | … |
-| 6 | Retention flow holds | Y/N | … |
-| 7 | Viewer feels smarter | Y/N | … |
-| 8 | Carries our identity | Y/N | … |
-**Lite verdict:** <"8/8 pass" or "fail on point [N]">
+## 2. Consolidated Audit (16 named checks)
 
-## 3. Full 12-Category Rubric (ONLY IF audit mode = Full; else "Not run — Lite mode.")
-| # | Category | Score | One-line reasoning |
-|---|----------|-------|--------------------|
-| 1 | Channel Identity Fit | X/10 | … |
-| 2 | Hook Strength | X/10 | … |
-| 3 | Curiosity Gap | X/10 | … |
-| 4 | Payoff Strength | X/10 | … |
-| 5 | Retention Flow | X/10 | … |
-| 6 | Easy-to-Understand | X/10 | … |
-| 7 | Originality of Angle | X/10 | … |
-| 8 | Indian Relevance (conditional) | X/10 | … |
-| 9 | Language Quality | X/10 | … |
-| 10| Tone | X/10 | … |
-| 11| Ending | X/10 | … |
-| 12| Fact Risk | X/10 | … |
-|   | **Average** | X.X | (out of 10) |
+**Sensitive-tier escalation:** <applies? + trigger | "No — routine">
+
+### Group A — Story & Voice
+| Check | Pass? | Evidence (one line; quotes where the check requires them) |
+|---|---|---|
+| HOOK | PASS/FAIL | … |
+| STRUCTURE | PASS/FAIL | … |
+| MECHANISM | PASS/FAIL | … |
+| PAYOFF | PASS/FAIL | … |
+| VOICE | PASS/FAIL | … |
+| COMPREHENSION | PASS/FAIL | … |
+| PATTERN-FRESHNESS | PASS/FAIL | … |
+| INDIAN-RELEVANCE | PASS/FAIL | … |
+| MODEL-INTEGRITY | PASS/FAIL/N-A | … |
+
+### Group B — Safety (binary; ANY FAIL blocks lock)
+| Check | Pass? | Evidence |
+|---|---|---|
+| CITATION | PASS/FAIL | Source Dossier result (per claim) |
+| AUTHORITY | PASS/FAIL | … |
+| CONTESTED-CLAIMS | PASS/FAIL | … |
+| HARD-NUMBERS | PASS/FAIL | … |
+| TEMPORAL-FRESHNESS | PASS/FAIL | … |
+
+**Audit result:** <"16/16 PASS" or "FAIL on [CHECK, CHECK] — see Fix List">
+
+## 3. Required Evidence (a)–(f) — un-evidenced passes are auto-fail
+- **(a) Hook quoted:** `<verbatim single line or 2–3 line stack; confirm no over-claim>`
+- **(b) Spoken-cadence lines (2):** 1.`<>` 2.`<>` — restrained, natural-verbal; NO reaction tics, NO Hindi/Hinglish
+- **(c) Article-feel test:** densest 3 reveal lines `<>`; joined `<>`; verdict `Spoken-feel / Article-feel`
+- **(d) Concreteness carrier:** `<scene/object/comparison/action-chain/named-specifics + what the editor can show without writing the thesis on screen>`
+- **(e) Self-clone:** `<proper-nouns-stripped skeleton + closer shape vs SLATE_LEDGER recent rows + verdict>`
+- **(f) Comprehension:** `<failing lines quoted, or "none">`
 
 ## 4. Mental Model / Framework Integrity
 **Status:** Pass | Fail | N/A — <quote model + why natural / N/A / fake-forced>
 
-## 5. Failure Modes Spot-Check (19 modes)
-| Failure mode | Detected? | Evidence (specific line if Yes) |
-|---|---|---|
-| 1. Forced Mental Model | Y/N | … |
-| 2. Fake Depth | Y/N | … |
-| 3. Overexplaining | Y/N | … |
-| 4. Adjacent-Category Drift (3 sub-tells: documentary/podcast/news, Headline/Wikipedia summarization, hype-channel) | Y/N | which sub-tell + evidence |
-| 5. Forced Sophistication | Y/N | … |
-| 6. External-Creator Clone Drift | Y/N | … |
-| 7. Polished Explainer Drift + Narrative Force (4-test, see § 5a) | Y/N | evidence required |
-| 8. Hook Over-Claim (survivability) | Y/N | quote hook; does it claim more than the facts support? |
-| 9. Underdeveloped Surface Logic | Y/N | how many reasons built belief before contradiction |
-| 10. Mechanism Collapse | Y/N | quote where two mechanisms merged |
-| 11. Punchline Dilution | Y/N | quote any line after the final punchline |
-| 12. Final-Rule Oversimplification | Y/N | quote catchy line + missing real rule |
-| 13. Labelled-Not-Concrete Indian Context | Y/N | quote generic label + missing lived condition |
-| 14. Vocabulary Drift (word-level) | Y/N | quote any high-register word that fails the Plain Word Test + show replacement or inline definition |
-| 15. Self-Clone / Sameness + Thesis-Hammer / Repetition | Y/N | (a) proper-nouns-stripped skeleton vs SLATE_LEDGER recent Shorts + closer shape vs ledger; (b) surplus thesis restatements |
-| 16. Contested-Claim-as-Settled | Y/N | quote the contested claim stated as fact |
-| 17. Unnamed Authority | Y/N | quote any "studies show / researchers found" + name the missing source |
-| 18. Source-Register / Instant-Comprehension / Mental-Math Drift (phrase-level) | Y/N | quote unclear line, misplaced citation, or denominator/reference switch |
-| 19. Citation Misdescription / Integrity | Y/N | source dossier result |
+## 5. Viral Social Commentary Overlay
+Pass | Fail | N/A — quote Side A, Side B, math, direct viral evidence, discomfort, viewer question OR list missing items.
 
-## 5a. Polished Explainer Drift + Narrative Force — 4-Test Detector
-If mode 7 = N, populate all four; a "N" without all four auto-converts to Y.
-- **(a) Hook quoted:** `<verbatim declarative/stack/scene-first hook; concrete story question; no over-claim>`
-- **(b) Spoken-cadence lines (2):** 1.`<>` 2.`<>` — restrained, natural-verbal; NO reaction-acting tics ("Bas.", "Right?", "But honestly?"), NO Hindi/Hinglish
-- **(c) 3-Line Article-Feel Test:** densest 3 reveal lines `<>`; joined `<>`; verdict `Spoken-feel / Article-feel` (must be Spoken-feel)
-- **(d) Narrative-force test:** strongest sourced scene/person/decision/conflict/object/contrast `<asset>`; used or replaced by demonstrably stronger opening `<evidence>`
-
-## 5b. Story-Shape Lock (binary — any FAIL caps verdict at Generic + Rewrite Trigger = Yes)
-| # | Check | Pass? | Evidence |
-|---|---|---|---|
-| 1 | Carrier used in first third (carries mechanism, not decorative B-roll) | PASS/FAIL | … |
-| 2 | Open earns a Google (story question, not a stat to nod at) | PASS/FAIL | … |
-| 3 | Payoff sequenced or single-true-cause (not flat-additive, not single-cause overclaim) | PASS/FAIL | … |
-| 4 | Thesis stated once + once at close, not hammered | PASS/FAIL | … |
-**Story-Shape Lock result:** <"4/4 PASS" or "FAIL on check [N] — verdict capped at Generic, Rewrite Trigger = Yes">
-
-## 6. Lane + Voice + Register Checks
+## 6. Lane + Register + Chain Checks
 - **Format-lane fit:** Strong | Weak | One-off justified — why: <one line>
-- **External-creator clone risk:** Low | Medium | High — side-by-side test + which channel; if High, which of (hook, framing, register, close, visual) must change
+- **External-creator clone risk:** Low | Medium | High — side-by-side test + which channel; if High, which of (hook, framing, mechanism angle, close, visual) must change *(detail behind PATTERN-FRESHNESS)*
 - **Language register:** Complete Indian English | register drift (describe)
 - **Energy register match:** <1–10> — delivery note matches? Y/N
-- **Viral Social Commentary overlay:** Pass | Fail | N/A — quote Side A, Side B, math, direct viral evidence, discomfort, viewer question OR list missing items
-- **Self-clone check:** strip proper nouns — does the skeleton (hook shape + pivot + closer) match a recent Short? Y/N + closer shape vs ledger
-- **Repetition check:** is the one idea stated more than twice? Y/N — quote the surplus
-- **Authority + numbers:** every evidence claim is checkable; only viewer-useful authorities are spoken; hard numbers carry source + date; first five seconds pass mental-math/reference-stability rule. Y/N
-- **Temporal freshness + scope:** every time-relative claim and exact older-period fact used as present proof freshly rechecked; evidence scope matches claim scope. Y/N
+- **Chain integrity (if brief provided):** lane / payoff / hook / narrative asset / carrier vs brief — Pass | Fail (describe drift)
 
 ## 7. What Works (specific quotes)
 - "<line>" — why it works
 
 ## 8. What Feels Weak (specific quotes + category)
-- "<line>" — fails <category #X / mode #Y> — why
+- "<line>" — fails <NAMED CHECK> — why
 
 ## 9. Generic or Off-Brand Lines (exact quotes; "None" if all pass)
 - "<line>" — sounds like <creator house style / documentary / Hinglish fact channel / motivational reel>
@@ -291,7 +252,7 @@ If mode 7 = N, populate all four; a "N" without all four auto-converts to Y.
 ## 10. Fix List (specific, line-level, actionable)
 | # | Current line | Suggested fix | Tied to |
 |---|---|---|---|
-| 1 | "<exact current>" | "<exact replacement>" | Gate / Category / Mode |
+| 1 | "<exact current>" | "<exact replacement>" | <NAMED CHECK> |
 
 ## 11. Fact-Check Risks
 | Claim | Severity | Required tier | Action | Source URL (if checked) |
@@ -311,18 +272,19 @@ If mode 7 = N, populate all four; a "N" without all four auto-converts to Y.
 ## 15. Audit Self-Verification (confirm before locking)
 - [ ] All required files read
 - [ ] Script had all 15 sections (else terminal stop)
-- [ ] Audit mode declared (+ escalation reason if Full)
+- [ ] Sensitive-tier escalation declared (+ trigger, or "routine")
 - [ ] Clean-room check: if brief = full-form-candidate OR all Stage-1 gates ≥8, Part A was completed and locked as a standalone pass before any Part B content
-- [ ] All gates/categories scored BEFORE narrative
-- [ ] All 19 failure modes checked with Y/N + evidence
+- [ ] All 16 checks recorded PASS/FAIL BEFORE narrative
+- [ ] Required Evidence (a)–(f) pasted verbatim; no un-evidenced PASS
+- [ ] Calibration rule applied: no check reading that would fail an anchor reference
+- [ ] Group B safety checks run with the Source Dossier filled per load-bearing cited claim
 - [ ] Temporal freshness rechecked for every time-relative claim and every exact older-period fact used as present proof
 - [ ] Viral overlay run when required; failures → Rewrite Trigger = Yes
-- [ ] External-creator clone risk graded
+- [ ] External-creator clone risk graded; SLATE_LEDGER read for self-clone/closer variety
 - [ ] Specific quotes used (not paraphrases)
 - [ ] Fact-check table covers every load-bearing claim
 - [ ] Sources Consulted listed (or "None")
-- [ ] Story-Shape Lock (4 binary checks) run with evidence; any FAIL caps verdict at Generic + Rewrite Trigger = Yes
-- [ ] Verdict ↔ scores ↔ Rewrite Trigger internally consistent
+- [ ] Verdict ↔ checks ↔ Rewrite Trigger internally consistent (per the rubric mapping)
 - [ ] Counter-argument written
 - [ ] Final Disposition (PASS/FIX/DROP) set via the Idea-Strength re-score; DROP chosen over rewrite when the idea (not the execution) is weak
 ```
@@ -334,7 +296,7 @@ If mode 7 = N, populate all four; a "N" without all four auto-converts to Y.
 
 ```
 # Final Script: <topic name>
-*Finalized on <YYYY-MM-DD>. KB version: v3.9. Rewriter: <model name>.*
+*Finalized on <YYYY-MM-DD>. KB version: v4.3. Rewriter: <model name>.*
 *Topic-eval source: <01 brief dated … / not provided>; verdict <… / not provided>.*
 *Script source: 02_SCRIPT_CREATION draft dated <YYYY-MM-DD>.*
 *Audit source: Section I above (this pass), verdict <verdict>, ROUTE_TO_REWRITE = <Yes | No>.*
@@ -363,7 +325,7 @@ If mode 7 = N, populate all four; a "N" without all four auto-converts to Y.
 <one sentence ≤8 words from Stage 1, or "N/A — optional bonus.">
 
 ## 8. Final Spoken Script
-<full spoken prose. Anchor 230–280 words. Complete Indian English. Required narrative functions present in the strongest topic-native order. No banned vocab.>
+<full spoken prose. Anchor 200–280 words. Complete Indian English. Required narrative functions present in the strongest topic-native order. No banned vocab.>
 
 **Delivery cues:** Preserve the inline delivery cues from the draft verbatim (the `[direct]` / `[stress]` / `[beat]` vocabulary in `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Delivery Cue Vocabulary`). If a beat was rewritten, re-apply cues to the new lines using the same closed vocabulary and the same restraint. Add cues only from that list; never invent new bracketed tokens; never strip cues from kept lines.
 **Word count:** <X> **Estimated spoken length:** <Y> seconds
@@ -392,42 +354,26 @@ Any claim still unverified must be marked **Cut** in §12 and removed.
 ## 13. Sources Consulted (rewrite)
 | # | Source | URL | What it supported | (or "None — script + audit + KB only.") |
 
-## 14. Cold-Read Fix Verification (8/8 gates + 19/19 modes + 5/5 source/clarity pillars + 4/4 Story-Shape Lock)
-| # | Gate | Pass? | Evidence |
-|---|---|---|---|
-| 1 | Hook stack lands in 1–5s | Y/N | … |
-| 2 | Simple curiosity gap | Y/N | … |
-| 3 | Clear payoff | Y/N | … |
-| 4 | Relatable or surprising angle | Y/N | … |
-| 5 | Easy at scroll speed | Y/N | … |
-| 6 | Retention flow holds | Y/N | … |
-| 7 | Viewer feels smarter | Y/N | … |
-| 8 | Carries our identity | Y/N | … |
+## 14. Cold-Read Fix Verification (16/16 consolidated checks)
+Judge the final rewrite as fresh input. Do not carry a PASS merely because the original beat passed. Re-run every check touched by the rewrite, with special attention to VOICE, COMPREHENSION, AUTHORITY, and CITATION.
 
-### 14a. Failure Modes (carry-forward + re-scores)
-Judge the final rewrite as fresh input. Do not carry a passing result merely because the original beat passed. Re-score all modes affected by the rewrite, with special attention to Modes 7 (Polished Explainer), 17 (Unnamed Authority), 18 (Source-Register/Comprehension), and 19 (Citation Integrity).
-| # | Mode (only if re-scored) | Detected? | Evidence from rewritten beat |
-|---|---|---|---|
+| Check (all 16) | Pass? | Evidence from the final script |
+|---|---|---|
+| HOOK … TEMPORAL-FRESHNESS (one row per check) | PASS/FAIL | … |
 
-### 14b. Voice + Story Evidence Block (v3.3)
-Quote the four Mode 7 tests for the final script: hook, spoken cadence, Article-Feel Test, and Narrative Force. Any unfillable item = not production-ready.
+### 14a. Required Evidence (a)–(f) for the final script
+Paste all six blocks (hook, spoken cadence, article-feel, concreteness carrier, self-clone vs ledger, comprehension) for the FINAL script. Any unfillable item = not production-ready.
 
-### 14c. Viral Social Commentary Evidence (only if applicable)
+### 14b. Viral Social Commentary Evidence (only if applicable)
 Quote: viral object + number; what it does; Side A steelman; Side B steelman + math; direct viral evidence; discomfort; viewer-question close. Any unfillable row = not production-ready.
 
-### 14d. Source Integrity and Audience Clarity Gate
-Paste all five pillar results, including temporal freshness.
-
-### 14e. Story-Shape Lock (binary)
-Paste all four Story-Shape Lock results (`../00_SHARED_KB/STORY_SHAPE_LOCK.md`). Any FAIL = not production-ready (verdict would cap at Generic).
-
-**Result:** <"8/8 gates + all modes + 5/5 source/clarity pillars + 4/4 Story-Shape Lock clear — production-ready" OR "fail on [gate/mode/pillar/story-shape] — repair and re-score">
+**Result:** <"16/16 checks clear — production-ready" OR "FAIL on [CHECK] — repair and re-score">
 
 ## 15. Improvement Verification (vs original)
 | Original audit flag | Status in rewrite | Evidence |
 |---|---|---|
 | <flag> | Fixed/Cut | "<line or change>" |
-**External-creator clone risk recheck** (if original Medium/High): differs in ≥3 of Hook|Framing|Register|Close|Visual — specifics per item.
+**External-creator clone risk recheck** (if original Medium/High): differs in ≥3 of Hook|Framing|Mechanism angle|Close|Visual — specifics per item.
 **Chain-integrity** (if brief provided): lane / payoff intent / hook angle vs brief.
 
 ### 15a. Rewrite Regression Check (mandatory for Major rewrite)
@@ -458,22 +404,24 @@ If any item fails after repair, Status is NOT PRODUCTION-READY.
 - [ ] No audit finding silently weakened, deleted, or downgraded in Part B; any evidence-based correction is explicitly logged
 - [ ] Route resolved (Direct finalization / Minor edit / Major rewrite / terminal)
 - [ ] Lineage captured in header
-- [ ] Every change in §12 traces to an audit fix, failure mode, or coherence adjustment (no silent changes)
+- [ ] Every change in §12 traces to an audit fix, a failed check, or a coherence adjustment (no silent changes)
 - [ ] All fact-check risks Verified or Cut (none left Unverified)
-- [ ] §14 cold-read passes: 8/8 gates + all failure modes + 5/5 source/clarity pillars + 4/4 Story-Shape Lock + Viral evidence if applicable
+- [ ] §14 cold-read passes: 16/16 consolidated checks + Viral evidence if applicable
 - [ ] If Major rewrite: §15a Rewrite Regression Check contains no unjustified regression
 - [ ] §15b Best-Available-Version Comparison selects the strongest viable safe treatment when an alternative exists
 - [ ] Spoken-Rhythm evidence carried or re-quoted for rewritten beats
 - [ ] Plain Word Test passed: every word in the final script is accessible to a Class 10–12 educated Indian reader, or is defined immediately inline
+- [ ] Word count verified numerically with all delivery cues stripped: 200–280 (count stated in § 8)
+- [ ] Delivery cues present and drawn only from the canonical seven-token vocabulary; closer carries `[drop voice]`
 - [ ] §16 SOP checklist = All checked
 - [ ] All consulted URLs listed (or "None")
 - [ ] §15 covers every original audit flag
 - [ ] § 18 Slate Ledger Row emitted (copy-ready) or appended to the file; "N/A — not locked" if terminal
 
 ## 18. Slate Ledger Row (paste into SLATE_LEDGER.md)
-Emit the single new ledger row for this Short, as a copy-ready Markdown table row, using the shape vocabulary in `../00_SHARED_KB/SLATE_LEDGER.md` (hook shape / pivot shape / closer shape). The operator pastes this as the new top data row of the ledger table. If the script did not lock, write `N/A — not locked.`
+Emit the single new ledger row for this Short, as a copy-ready Markdown table row, using the shape vocabulary in `../00_SHARED_KB/SLATE_LEDGER.md` (hook shape / pivot shape / closer shape / mid-script template). The operator pastes this as the new top data row of the ledger table. If the script did not lock, write `N/A — not locked.`
 
-`| <YYYY-MM-DD> | <topic> | <lane> | <hook shape> | <pivot shape> | <closer shape> |`
+`| <YYYY-MM-DD> | <topic> | <lane> | <hook shape> | <pivot shape> | <closer shape> | <mid-script template> |`
 ```
 
 ---
@@ -485,7 +433,7 @@ Emit the single new ledger row for this Short, as a copy-ready Markdown table ro
 - **Section 12 is the accountability artifact.** Any change not listed there is a silent change — a bug.
 - **Controlled optimisation bias.** In Strong/Good scripts, preserve strong lines and avoid churn, but do not let "unflagged" mean "untouchable." A controlled optimisation pass may replace unflagged lines when the Best-Available-Version comparison proves a stronger safe treatment.
 - **Coherence permission.** Downstream changes to unflagged lines are allowed when a flagged change requires them or when the controlled optimisation pass selects a stronger safe treatment; document as `Coherence — downstream of change #N` or `Optimisation — best-available-version`.
-- **Where to save the output:** save Section II (the final script) to `FINAL_SCRIPTS/<TOPIC>_FINAL.md`. Optionally save Section I to `AUDITS/<TOPIC>_AUDIT.md` for the record. Then hand the final script to `../04_EDITOR_BRIEF/01_PROMPT.md`.
+- **Where to save the output:** save Section II (the final script) to `03_AUDIT_AND_FINALIZE/FINAL_SCRIPTS/<TOPIC>_FINAL.md` — the `FINAL_SCRIPTS/` folder *inside this stage folder*, never a root-level `FINAL_SCRIPTS/`. Optionally save Section I to `03_AUDIT_AND_FINALIZE/AUDITS/<TOPIC>_AUDIT.md` for the record. Then hand the final script to `../04_EDITOR_BRIEF/01_PROMPT.md`.
 
 ---
 

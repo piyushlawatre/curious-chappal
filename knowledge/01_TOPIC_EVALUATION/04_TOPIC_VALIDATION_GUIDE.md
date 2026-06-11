@@ -3,7 +3,7 @@ title: "Topic Validation Guide (8-Point)"
 file: "04_TOPIC_VALIDATION_GUIDE.md"
 role: canonical
 canonical: true
-version: "v2.12"
+version: "v2.13"
 related: ["../00_SHARED_KB/CHANNEL_CONSTITUTION.md", "../00_SHARED_KB/FORMAT_LANES.md", "../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md", "../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md"]
 summary: "Canonical 8-Point Shorts Validation, acceptable Short formats, decision table, and Anchor-only production target rules. Mental model is optional bonus, not a gate."
 keywords: ["topic selection", "8-point validation", "angle", "format lane", "decision table", "anchor short"]
@@ -23,7 +23,7 @@ Every Short topic must pass the **8-Point Shorts Validation**:
 2. **Simple curiosity gap** — the viewer instantly wants to know "wait, why?" or "what happened next?"
 3. **Clear payoff** — the Short actually delivers an answer / reveal / takeaway. No cliffhanger-as-content.
 4. **A relatable or surprising angle** — either the viewer already cares about this, or it flips something they thought they knew.
-5. **Easy-to-understand explanation** — clear enough to follow at scroll speed, no jargon, no unnecessary prerequisites. This includes vocabulary difficulty: any word that would require a dictionary lookup for a **Class 10–12 educated Indian metro viewer** counts as a prerequisite. High-register everyday words (“incumbent”, “proliferate”, “oxidise”, “rancid”) fail this gate exactly as technical jargon does, unless defined immediately in the same sentence. See `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark` for the plain-word swap table and test.
+5. **Easy-to-understand explanation** — clear enough to follow at scroll speed, no jargon, no unnecessary prerequisites. This includes vocabulary difficulty: any word that would require a dictionary lookup for a **Class 10–12 educated Indian metro viewer** counts as a prerequisite. High-register everyday words (“proliferate”, “oxidise”, “rancid”, “dearth”) fail this gate exactly as technical jargon does, unless defined immediately in the same sentence — and per the calibration guard in `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark`, a word the reference scripts themselves speak (e.g. “incumbent capture”, defined inline in Ref 4) is not a failing word. See `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark` for the plain-word swap table and test.
 6. **Strong retention flow** — every 3–6 seconds delivers a new beat; no flat middle.
 7. **The viewer feels smarter after watching** — they leave with a fact, an insight, a reason, or a sharp observation worth repeating.
 8. **Our own identity in language, tone, framing, or delivery** — complete Indian English, sharp, casually confident; not a long-form documentary-explainer style ported to Shorts, and not a generic Hinglish fact channel.
@@ -80,7 +80,7 @@ Some Shorts naturally produce a clean transferable principle in 8 words or fewer
 
 **A transferable model is not required**, but its absence is a diagnostic, not a green light. A sharp fact, hidden reason, or live debate is publishable on its own (see `../00_SHARED_KB/CHANNEL_CONSTITUTION.md § The Lens`).
 
-If a mental model fits naturally, add it as +1 to +2 audit bonus per `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md § Bonus Layer`. Never reject a topic because it lacks one.
+If a mental model fits naturally, capture it for the brief; the audit checks only that it is natural, never that it exists (`../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md § MODEL-INTEGRITY`). Never reject a topic because it lacks one.
 
 Use mental models when:
 - The topic naturally produces a clean, named principle in 8 words or fewer

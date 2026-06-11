@@ -3,9 +3,9 @@ title: "Format Lanes"
 file: "FORMAT_LANES.md"
 role: canonical
 canonical: true
-version: "v3.1"
+version: "v3.4"
 related: ["REFERENCE_SCRIPTS.md", "CHANNEL_CONSTITUTION.md", "VIRAL_SOCIAL_COMMENTARY.md", "../01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md", "../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md"]
-summary: "Seven canonical format lanes plus three proposed lanes calibrated by the sixteen reference scripts. Lane-selection tiebreaker, weekly cadence, external-creator clone safety, and Viral Social Commentary handoff."
+summary: "Seven canonical format lanes plus three proposed lanes calibrated by the sixteen reference scripts. Lane-selection tiebreaker, external-creator clone safety, and Viral Social Commentary handoff. Cadence and lane-promotion operations moved to ../OPERATIONS.md at KB v4.0."
 keywords: ["format lanes", "real reason", "hidden india", "smart money", "science lite", "sharp contradiction", "viral social commentary", "one-off", "forgotten inventor", "quiet monopoly", "status game"]
 ---
 
@@ -128,17 +128,7 @@ If a fourth or fifth reference script gets added to any of these lanes and the c
 
 ### Lane graduation (probation)
 
-The three proposed lanes are **probationary**, not part of the fixed 7-slot weekly rotation. They are valid to tag and script at any time, but they do **not** earn an automatic rotation slot just for being posted once — that would make "proposed" meaningless. A proposed lane is promoted into the rotation only when it has *earned* it on performance.
-
-The benchmark is the **channel median performance score** (the weekly retro scores every Short 0–100 on watch-through, shares, and engagement; the median across all reviewed Shorts is the bar). Only Shorts with real metrics count — a freshly posted or unmeasured video is ignored until it has numbers, so blank rows never move the bar or a lane's record. Against that bar:
-
-- **Graduate / promote** — the lane has shipped at least **2 Shorts that scored at or above the channel median, landing in at least 2 different weeks** (the two-week spread guards against one lucky week being mistaken for a winning lane). It is now a candidate to enter the rotation by swapping in for the weakest-performing core lane (it does not add an eighth slot — the cycle stays 7 Shorts). With only 2 Shorts this is an *early* read the human can act on or confirm with one more; with 3+ it is a *solid* read.
-- **Keep testing (on probation)** — the lane has shipped at least one Short but not yet 2 above-median ones. Ship more; each above-median Short counts toward graduation.
-- **Cut / reframe** — the lane has shipped **4 or more Shorts across at least 2 weeks and still has fewer than 2 at or above the median**. The cut bar is deliberately *higher* than the promote bar: cutting a lane is costly and hard to undo, while a promotion is reversible, so we demand a fuller, fairer run before dropping. It is underperforming; cut the lane or reframe the angle rather than keep forcing it.
-
-This rule is enforced in two places that must stay in sync: the weekly retro **does not allocate a rotation slot to a proposed lane** (only graduated/core lanes are allocated), and the retro's **Probation panel** shows each in-play proposed lane's track record and its median-based next action (promote / keep testing / cut). Promotion is a deliberate decision, not automatic — the panel surfaces the recommendation, and its swap-in action performs the 1:1 swap (the rotation is stored in app settings; the calendar's cycle defaults and future retro allocations follow it).
-
-**Why these are simple counts, not statistics.** At this channel's cadence (~3–4 Shorts/week, with proposed lanes posted only as occasional swap-ins), a proposed lane accumulates Shorts slowly — it stays a small sample for months. Heavier statistical methods (e.g. shrinkage estimates) only pay off once a lane reaches larger samples, which will not happen here for a long time, and they make the read harder for a non-technical reviewer. So the rule stays a legible count with a two-week spread guard and an asymmetric cut bar, and every read is framed as *early* vs *solid* so it is treated as decision-support, not an automated verdict. **Revisit this only if a proposed lane ever routinely reaches 5+ Shorts** and you want finer-grained calls — at that point a confidence-interval or shrinkage approach becomes worth the added complexity.
+Proposed lanes are valid to tag and script at any time but do **not** sit in the fixed rotation. The promotion / keep-testing / cut rule — and the weekly cadence it interacts with — live in `../OPERATIONS.md`. They are publishing operations, not script knowledge; no pipeline stage needs them.
 
 ---
 
@@ -179,23 +169,7 @@ If the lane is unclear, repair the angle before drafting. Generate a cleaner ref
 
 ## Weekly Cadence
 
-Every produced Short is an Anchor Short. The slate runs on a **2-week A+B cycle — 7 Shorts per cycle** (~3–4 per week): each canonical lane posts once per cycle, matched to that day's audience behaviour. This is the rotation the planning calendar uses; the weekly retro may tilt the next cycle's split by at most one slot (see Lane graduation above for how proposed lanes enter).
-
-| Cycle Short | Week · Day | Time (IST) | Default lane |
-|---|---|---|---|
-| 1/7 | A · Monday | 7 PM | Real Reason — familiar story, hidden cause; fresh-week opener |
-| 2/7 | A · Wednesday | 7 PM | Sharp Contradiction — peak engagement day gets the sharpest lane |
-| 3/7 | A · Friday | 7 PM | Hidden India — rooted and shareable into the weekend |
-| 4/7 | B · Monday | 7 PM | Smart Money/Business — open the second week with a mechanism |
-| 5/7 | B · Wednesday | 7 PM | Viral Social Commentary — peak day; stage the debate while it's hot |
-| 6/7 | B · Thursday | 7 PM | Science Lite — one clean invisible mechanism |
-| 7/7 | B · Saturday | 11 AM | One-off — weekend leisure scroll, spend it on a standout topic |
-
-These are **defaults, not rules** — quality over cadence always wins. If the sharpest researched idea this week is a different lane, post it in the slot and let the rotation flex. Viral Social Commentary still follows current debate intensity: pull it forward or swap slots when a debate is live. Maximum two current-event Shorts per week (Real Reason doorway + Viral Social Commentary combined). Never two consecutive current-event Shorts.
-
-**Solo operation:** the cadence above describes *publishing* rhythm, not *drafting* rhythm. Maintain a 1-week buffer — draft and verify next week's scripts before this week ends. The 24-hour fact-check gap sits inside the buffer, not the publishing window.
-
----
+Moved to `../OPERATIONS.md` at KB v4.0 (publishing schedule, rotation, solo-operation buffer). The only cadence rules that affect *scripting* decisions remain in § Current Affairs Sub-Categories below: maximum two current-event Shorts per week, never two consecutive.
 
 ## External-Creator Topic Safety Rule
 
@@ -225,15 +199,6 @@ Maximum two current-event Shorts per week across all three categories. Never two
 
 ---
 
-## Audit Add-On for Format Lane
+## Lane Checks at Audit
 
-Every audit adds a short lane check:
-
-```
-Format lane fit: [Strong / Weak / One-off justified]
-Reference calibration: [Which reference scripts were used to calibrate this draft]
-External-creator clone risk: [Low / Medium / High]
-Language register check: [Complete Indian English — yes / no, with any drift flagged]
-```
-
-If external-creator clone risk is High, route through Stage 3 Part B rewrite before production even if the script scores well.
+Lane fit, external-creator clone risk, and language register are audited at Stage 3 — see `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md` (PATTERN-FRESHNESS, VOICE) and § 6 of the audit template (Lane + Register + Chain Checks). This file owns lane *selection*; the rubric owns lane *verification*. If external-creator clone risk is High, the script routes through the Stage 3 Part B rewrite before production even if it scores well.

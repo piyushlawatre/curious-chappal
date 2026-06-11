@@ -74,6 +74,8 @@ const outputContracts: Record<WorkflowStepId, OutputContract> = {
     requiredPatterns: [
       { label: "Script header", pattern: /^# Script:/im },
       { label: "Word count", pattern: /\*\*Word count:\*\*/i },
+      // KB v4.1 — Writer's Lock check 7: delivery cues are mandatory; [direct] opens every script.
+      { label: "Delivery cues embedded ([direct] opener)", pattern: /\[direct\]/i },
     ],
   },
   // Stage 3: audit runs internally, but the app only needs the final script package.
@@ -95,6 +97,8 @@ const outputContracts: Record<WorkflowStepId, OutputContract> = {
         label: "Status field (PRODUCTION-READY or NEEDS-ANOTHER-PASS)",
         pattern: /\*Status:\s*(PRODUCTION-READY|NEEDS-ANOTHER-PASS)\*/i,
       },
+      // KB v4.1 — cues must survive Stage 3 (preserved verbatim, closer carries [drop voice]).
+      { label: "Delivery cues preserved ([direct] present)", pattern: /\[direct\]/i },
     ],
   },
   "04_EDITOR_BRIEF": {

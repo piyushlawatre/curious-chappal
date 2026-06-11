@@ -3,7 +3,7 @@ title: "Channel Constitution"
 file: "CHANNEL_CONSTITUTION.md"
 role: canonical
 canonical: true
-version: "v3.0"
+version: "v3.1"
 related: ["REFERENCE_SCRIPTS.md", "LANGUAGE_AND_VOICE.md", "FORMAT_LANES.md", "VIRAL_SOCIAL_COMMENTARY.md", "../01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md"]
 summary: "Channel identity, audience, positioning, and the eight-point topic filter. Everything in this file is observable in the sixteen scripts in REFERENCE_SCRIPTS.md."
 keywords: ["identity", "constitution", "audience", "positioning", "eight-point validation", "smart short-form", "complete Indian English"]
@@ -17,9 +17,9 @@ Canonical source for channel identity, audience, what the channel is, and what i
 
 ## Channel Identity
 
-A short-form video channel that takes interesting stories — surprising facts, hidden mechanisms, smart observations, useful insights — and packages them clearly enough that the viewer feels a little smarter after ninety to a hundred and twenty seconds.
+A short-form video channel that takes interesting stories — surprising facts, hidden mechanisms, smart observations, useful insights — and packages them clearly enough that the viewer feels a little smarter after sixty to a hundred and twenty seconds.
 
-The target category is **fast, mechanism-first, urban Indian short-form storytelling**. Sharp opening, compressed context with named specifics, a concrete carrier that lets the viewer see the mechanism, a clean pivot, an earned mental model, and a clean close. Built native for YouTube Shorts and Instagram Reels.
+The target category is **fast, mechanism-first, urban Indian short-form storytelling**. Sharp opening, compressed context with named specifics, a concrete carrier that lets the viewer see the mechanism, a clean pivot, an earned insight, and a clean close. Built native for YouTube Shorts and Instagram Reels.
 
 This is **smart short-form**. It is not a documentary channel, not a magazine article on video, not a compressed mini-documentary, not a podcast clip pretending to be a Short.
 
@@ -27,13 +27,13 @@ This is **smart short-form**. It is not a documentary channel, not a magazine ar
 
 ## One-Line Positioning
 
-Mechanism-first Indian short-form storytelling. Curious stories, told in complete Indian English, in 90 to 120 seconds, with a payoff that holds after the scroll.
+Mechanism-first Indian short-form storytelling. Curious stories, told in complete Indian English, in 60 to 120 seconds, with a payoff that holds after the scroll.
 
 ---
 
 ## Target Audience
 
-**Primary.** Educated urban Indian viewers, aged eighteen to forty. Comfortable in English. Live in Tier 1 metros (Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, Kolkata) and Tier 2 cities (Pune, Indore, Jaipur, Coimbatore, Lucknow, Chandigarh, Ahmedabad, and similar). Scroll Shorts and Reels daily. Curious about money, science, history, business, current debates, and the *real reason behind things*.
+**Primary.** Educated urban Indian viewers, aged eighteen to forty. May have below-average English comfort — every script must stay clear on first listen at voiceover speed (see `LANGUAGE_AND_VOICE.md § Below-Average English Comprehension Rule`). Live in Tier 1 metros (Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, Kolkata) and Tier 2 cities (Pune, Indore, Jaipur, Coimbatore, Lucknow, Chandigarh, Ahmedabad, and similar). Scroll Shorts and Reels daily. Curious about money, science, history, business, current debates, and the *real reason behind things*.
 
 **Secondary.** South Asian diaspora viewers globally with the same psychographic.
 
@@ -80,7 +80,7 @@ The differentiation is *register*: complete Indian English, restrained voice, me
 
 ## The Lens
 
-Every Short reveals something the viewer did not know — or did not know the *real reason* behind. The story is the product. A transferable mental model is the standard structural beat in fifteen of sixteen references; the exception is Viral Social Commentary, where the lane swaps the model for a compressed-insight + viewer-question close.
+Every Short reveals something the viewer did not know — or did not know the *real reason* behind. The story is the product. A transferable mental model appears in fifteen of sixteen references, but it is never a required beat — it lands only when the mechanism earns it (see `MASTER_RULE.md`). The exception is Viral Social Commentary, which swaps the model for a compressed-insight + viewer-question close.
 
 Acceptable Short angles (each backed by a reference script):
 
@@ -145,7 +145,7 @@ For every Short, ask:
 2. Does the topic have a hidden mechanism — incentive, biology, structure, power dynamic — that the surface story does not reveal?
 3. Is there a clear payoff the viewer can repeat to a friend?
 4. Is the topic either surprising in itself or surprising in its mechanism?
-5. Can the script be voiced in ninety to a hundred and twenty seconds without padding or compression?
+5. Can the script be voiced in sixty to a hundred and twenty seconds without padding or compression?
 6. Will the viewer feel smarter, not lectured, after watching?
 7. Does the topic earn complete Indian English without needing Hindi or slang to land?
 8. Is there a strong narrative proposition, story spine, and pictureable scene/object/comparison/action chain that can carry the viewer from hook to payoff without padding?

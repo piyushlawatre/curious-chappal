@@ -3,9 +3,9 @@ title: "Language and Voice"
 file: "LANGUAGE_AND_VOICE.md"
 role: canonical
 canonical: true
-version: "v3.6"
+version: "v3.8"
 related: ["REFERENCE_SCRIPTS.md", "CHANNEL_CONSTITUTION.md", "VIRAL_SOCIAL_COMMENTARY.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md"]
-summary: "The channel writes in complete Indian English: globally understandable English shaped by Indian context. No Hindi, no Hinglish, no slang, no internet-speak. Voice is restrained, declarative, and authoritative-but-accessible — calibrated against the sixteen reference scripts."
+summary: "The channel writes in complete Indian English: globally understandable English shaped by Indian context. No Hindi, no Hinglish, no slang, no internet-speak. Voice is restrained, declarative, and authoritative-but-accessible — calibrated against the sixteen reference scripts. Assumes a viewer with below-average English comfort: simple English, short sentences, cushioned hard names, concrete images."
 keywords: ["language", "complete Indian English", "voice", "register", "host", "banned words", "openings", "tone", "calibration"]
 ---
 
@@ -37,7 +37,7 @@ Hinglish was the earlier brief. It is no longer. The decision is grounded in wha
 
 - The sixteen reference scripts contain no Hinglish lines, no Hindi anchors, no Hindi closers.
 - Hinglish creates a category problem. The channel sits between loud Hinglish fact-creators and dry English documentary-explainers. The differentiation is *register*, not vocabulary mixing.
-- An Indian audience that is comfortable in English on Reels and Shorts does not need Hindi cues to feel addressed. Specificity ("Rockefeller University's biology lab", "Mangalyaan", "450 crore rupees") does that work better than vocabulary code-switching.
+- An Indian audience watching English Reels and Shorts does not need Hindi cues to feel addressed. Specificity ("Rockefeller University's biology lab", "Mangalyaan", "450 crore rupees") does that work better than vocabulary code-switching.
 
 If a script feels like it needs Hindi to land, the topic, the angle, or the mechanism is doing too little work. Strengthen those.
 
@@ -57,7 +57,7 @@ The voice sits between three traps. Each trap has a script-grounded counterpart 
 
 Every rule here is taken from the reference scripts.
 
-- **Short declaratives.** The scripts almost never run a sentence past about 25 words. Long sentences are reserved for context, never for the punch.
+- **Short declaratives.** Target 8–12 words per sentence; hard cap 15 unless a factual claim genuinely requires more (see § Below-Average English Comprehension Rule). Long sentences are reserved for context, never for the punch.
 - **Single-sentence paragraphs as punctuation.** *"Freedom. In French."* / *"Your parents did."* / *"So India waits."* / *"That is what we picked."* Use sparingly. They land because the surrounding paragraphs are normal length.
 - **Parallel triplets for force.** *"Not one name. Not one location. Not one contact."* / *"Diet does not shift it. Soap does not mask it. Perfume does not cancel it."* / *"No negotiation. No appeal. No second chance."* One triplet per script is plenty.
 - **Numbers stated specifically and with units.** "ten months", "six weeks", "thirty years old", "450 crore rupees", "over a hundred million diabetics". Vague quantifiers only when no specific number is needed.
@@ -80,6 +80,8 @@ A thesis stated once with force is stronger than the same thesis restated three 
 ## Closer Variety
 
 The two-part inversion close — "It is not about A. It is about B." / "X did not lose to Y. X lost to Z." — is the channel's signature, and a signature loses power when every Short uses it. Keep a running ledger of the closer shape used on each published Short in `SLATE_LEDGER.md` (the persisted slate memory; read it at Stage 1 and Stage 3, append every new Short at lock). If the last two Shorts in that ledger closed on the two-part inversion, the next one must close differently (a single-line reframe, a twist-to-personal, a quiet stand, a forward question — see § Closing Line). Vary the shape on purpose.
+
+**Batch rule (mandatory for multi-script runs).** When several scripts are generated in one run, the batch is also the ledger: no closer shape may be used more than twice in any five consecutive scripts, and the two-part inversion may never close two consecutive scripts in the batch. Check this across the batch before returning, not per script.
 
 ## Vocabulary Control
 
@@ -115,64 +117,32 @@ This is not about technical or academic terms only. It applies to every word in 
 
 Ask before using any word: *Would I say this word out loud in a casual conversation with a college friend from a small town?* If the answer is no, or even maybe, replace it.
 
-### The Three Categories to Watch
+### The Test, Not a List
 
-**Category 1 — Academic and domain terms.** These are obvious. Replace or define immediately.
+One test decides every word: *would I say this word out loud, in a casual conversation, to a college friend from a small town?* If no — or even maybe — replace it, or define it immediately in the same sentence. There is no master list to memorise; the test is the rule.
+
+Watch three habits rather than categories of vocabulary:
+
+- **Academic and domain terms** ("inert", "carcinogen", "oxidise") — obvious; replace or define inline.
+- **Newspaper register** — words that feel normal in print but are never spoken ("dearth", "exacerbated", "precipitous", "remits", "disburses"). If it sounds like a headline and not like speech, swap it.
+- **History-and-events register** ("besieged", "annexed", "agrarian", "hoarded") — describe the condition in plain words instead ("cut off from food", "took control of by force", "grain traders kept back to sell later at higher prices").
+
+The ten swaps that catch the most real failures:
 
 | Say this instead | Not this |
 |-----------------|----------|
-| does not react | inert |
-| reacts with oxygen / goes stale | oxidise / oxidation |
-| stale, spoiled | rancid |
-| existing, current | incumbent |
-| causes cancer | carcinogen |
 | thing that happens | phenomenon |
 | spreads quickly | proliferate |
-| roads, networks, systems | infrastructure |
-| pays part of the cost | subsidise |
-| makes compulsory | mandate |
 | shortage | dearth |
-| speed up | accelerate |
-| main, central | pivotal, cardinal |
-
-**Category 2 — Formal English words that feel common but are not everyday speech.** These are the ones that slip through. They appear in newspapers and textbooks so they feel acceptable. They are not. The target viewer does not use them while speaking.
-
-| Say this instead | Not this |
-|-----------------|----------|
-| died because they had no food / went hungry | starvation / starved (when used as an abstraction) |
-| surrounded, cut off from outside | under siege / siege |
-| sticks out, pushes outward | bulges |
-| gains, profits | proceeds, accrues |
-| gives, hands over | remits, disburses |
-| ended, stopped | ceased, terminated |
-| changed, moved to | transitioned |
-| carried out | executed, undertaken |
+| made worse | exacerbated |
 | used | utilised |
 | showed | demonstrated |
-| built | constructed |
-| looked into | examined, scrutinised |
 | got rid of | abolished, eliminated |
-| made worse | exacerbated |
-| came before | preceded |
-| argued for | advocated |
-| needed | required, necessitated |
-| a sharp fall | a precipitous decline |
-| got | obtained, acquired |
-| happened at the same time | coincided |
+| cut off from outside | under siege / besieged |
+| goes stale / reacts with air | oxidises / rancid |
+| people who worked on other people's land | agrarian labourers |
 
-**Category 3 — History, geography, and events writing.** Scripts about famines, wars, governments, and migrations carry specific risk. These words feel descriptive but most viewers will not know them as spoken words.
-
-| Say this instead | Not this |
-|-----------------|----------|
-| blocked, cut off from food | under siege / besieged |
-| grain that traders kept back to sell later at higher prices | hoarded grain |
-| prices went up many times | prices escalated / soared (without explanation) |
-| people who worked on other people's land | landless labourers / agrarian workers |
-| took control of by force | annexed, seized |
-| pushed out | displaced, expelled |
-| set up, created | instituted, established |
-| the way a disease spreads | contagion / transmission |
-| the idea that | the doctrine of |
+**Calibration guard (mandatory).** This rule must PASS all ten anchor scripts in `REFERENCE_SCRIPTS_CORE.md` unchanged. A word the references speak is not banned: "incumbent capture" (defined inline, Ref 4), "executed" (Ref 1), "authoritarian" (Ref 6), "cannibalize" (Ref 4) all pass because each is either everyday for this audience in context or defined in the same line. The test is spoken-register fit plus immediate inline definition — never a lookup table applied mechanically. A flagged word that is defined in its own line passes.
 
 ### What To Do When in Doubt
 
@@ -194,6 +164,112 @@ If a term must stay — because it is the subject itself, like "IVF" or "GLP-1" 
 - Right: *"Nitrogen does not react with food — which is why it keeps chips from going stale."*
 
 The viewer who does not know the word should understand the full sentence without pausing. If they have to pause, the line has failed.
+
+---
+
+## Below-Average English Comprehension Rule
+
+This is the umbrella doctrine for the Reader Benchmark above and the Instant Comprehension Gate below.
+
+Every script must be understandable to a curious Indian Tier 1 / Tier 2 viewer aged 18–40 who may have below-average English comfort. The viewer is curious and modern, but they should not need academic English, business jargon, trade vocabulary, or prior domain knowledge to understand the video.
+
+The script must be understood on first listen.
+
+The goal is not to make the script childish. The goal is to make it **clear, concrete, premium, and easy to follow at voiceover speed**.
+
+### Simple English Without Losing Premium Tone
+
+Use simple English, but keep the tone confident and intelligent.
+
+A script should sound like:
+
+- a sharp storyteller
+- explaining a surprising mechanism
+- in clean spoken English
+- without sounding academic, childish, motivational, or over-explained
+
+Do not use difficult vocabulary to create a premium tone.
+
+Premium tone should come from:
+
+- clear structure
+- strong contrast
+- precise facts
+- concrete images
+- short confident sentences
+- earned payoff
+
+Premium tone should not come from:
+
+- trade jargon
+- academic English
+- long sentences
+- abstract business language
+- clever but unclear lines
+
+### Sentence Length
+
+Target sentence length: 8–12 words.
+
+Hard cap: 15 words, unless a factual claim genuinely requires a longer sentence.
+
+A listener can lose the thread after 12–15 words at voiceover speed.
+
+Short sentences improve clarity and make the voiceover sound more confident.
+
+### Vocabulary Rule
+
+Remove domain-specific words unless absolutely necessary.
+
+Replace abstract or trade-heavy words with concrete common-English phrasing. These extend the Reader Benchmark swap table:
+
+| Avoid | Prefer |
+|---|---|
+| rough diamonds | uncut stones / uncut diamonds |
+| premium stones | big stones / high-value stones |
+| established houses | old diamond traders / big traders |
+| couriers | people they trusted |
+| credit | loans given on trust |
+| community credit | loans given on trust, with no paperwork |
+| mastering tiny stones | factories built to cut tiny stones |
+| global markets | buyers around the world |
+| uneconomic | not worth the money |
+| arbitrage | buy cheap in one place, sell for more in another |
+| low-value segment | the part nobody wanted |
+| operating system | the way the business worked |
+| supply chain | the journey from mine to buyer |
+| export ecosystem | businesses that sent goods abroad |
+
+### Hard Name Cushion Rule
+
+If the script includes a place, person, community, company, law, or technical term that may be unfamiliar, introduce it with a simple cushion.
+
+Examples:
+
+- `In Belgium, there is a city called Antwerp.`
+- `Palanpur is a town in Gujarat.`
+- `Surat is the city where the cutting happened.`
+
+Do not overload the viewer with multiple unfamiliar names in one line.
+
+### Concrete Image Rule
+
+Whenever possible, explain abstract ideas through visible objects, people, places, or actions.
+
+Prefer concrete images:
+
+| Abstract | Concrete |
+|---|---|
+| trust-based trade | a bag of diamonds trusted to one person |
+| low-value inventory | stones sitting in a corner |
+| ignored market segment | what nobody wanted |
+| informal finance | loans given on trust, with no paperwork |
+| production specialization | factories built to cut tiny stones by the millions |
+| consumer relevance | the next diamond you see at a wedding |
+
+Every script should contain at least 2–3 concrete images the editor can show visually.
+
+**Calibration guard:** as with the Reader Benchmark, this rule must PASS all ten anchor scripts in `REFERENCE_SCRIPTS_CORE.md` unchanged. The test is first-listen comprehension for a below-average-English viewer — never a word count or lookup table applied mechanically.
 
 ---
 
@@ -263,6 +339,18 @@ Energy is calibrated to topic, not to category. The references span:
 What is constant across all sixteen: the energy never rises above clean restraint. There is no fake-hype, no breathless retention chasing, no "you guys won't believe this." There is also no documentary slowness or essay-style ponderousness.
 
 The texture is closer to a smart Indian reader telling you the punchline of a long article they just finished — interested, clear, unhurried but not slow — than to any creator archetype on either end.
+
+**Energy scale (1–10).** Stage templates that ask for an Energy number use this mapping:
+
+| Number | Register | Reference examples |
+|---|---|---|
+| 1–2 | Quiet gravitas | Noor Inayat Khan (Ref 1), Voyager (Ref 10) |
+| 3–4 | Restrained curiosity | Mosquitoes (Ref 2), Ozempic (Ref 8) |
+| 5–6 | Dry observation | IV Drips (Ref 3), Diet Coke (Ref 7) |
+| 7–8 | Sharp business analysis | Nokia (Ref 4), South Korea (Ref 6), De Beers (Ref 13) |
+| 9–10 | Compressed contemporary debate | 70-Hour Week (Ref 15), No Kids / One Kid (Ref 16) |
+
+The ceiling is absolute: even a 9–10 stays inside clean restraint — the number sets pace and bite, never volume or hype.
 
 ---
 

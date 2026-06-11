@@ -21,8 +21,8 @@ const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 // Proposed (probationary) lanes — not part of the fixed 7-slot rotation. They are
 // NOT auto-allocated a weekly slot just for being posted; they earn the rotation
-// only by graduating (see the client Probation panel + FORMAT_LANES.md § Lane
-// graduation). Excluding them here is the sync fix that keeps "proposed" meaningful.
+// only by graduating (see the client Probation panel + OPERATIONS.md § Proposed-Lane
+// Promotion). Excluding them here is the sync fix that keeps "proposed" meaningful.
 const PROPOSED_LANES = ["Forgotten Inventor", "Quiet Monopoly", "Status Game"];
 
 // ── Rotation + scoring helpers ──────────────────────────────────────────────────
@@ -189,7 +189,7 @@ function computeWeighting(videos, priorWeeks = [], rotationLanes = ROTATION_LANE
 //   • One-off can never earn the extra slot — "more One-offs" is lane-discipline
 //     escape (FORMAT_LANES.md failure mode). It can still be the rested lane.
 //   • Proposed lanes are never allocated here — they graduate via the Probation
-//     panel (see FORMAT_LANES.md § Lane graduation).
+//     panel (see OPERATIONS.md § Proposed-Lane Promotion).
 function allocateSlots(weighting, N, rotationLanes = ROTATION_LANES) {
   const slotsTotal = Math.max(1, Math.round(N) || 7);
   const TILT_GAP = 20; // min score gap (0..100) before moving a slot — guards against small-sample noise

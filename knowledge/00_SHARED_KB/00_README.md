@@ -8,11 +8,11 @@ This folder owns cross-stage knowledge used by stages 1 to 4.
 
 **Read order for a new AI session:**
 
-1. `REFERENCE_SCRIPTS.md` — the sixteen scripts and the rules around them.
+1. `REFERENCE_SCRIPTS_CORE.md` — the ten anchor scripts and the rules around them. (Open the full `REFERENCE_SCRIPTS.md` only for deep recalibration or proposed-lane work — see the next paragraph.)
 2. `MASTER_RULE.md` — reference hierarchy, core production rules, stage ownership.
 3. `CONTEXT_PRIMER.md` — compressed brief to paste into a new chat.
 
-The other files are opened as needed — `LANGUAGE_AND_VOICE.md` for register questions, `FORMAT_LANES.md` for lane selection, `VIRAL_SOCIAL_COMMENTARY.md` for the one lane that overrides the default structure, `SOURCE_AND_FACT_RULES.md` for sourcing, `SOURCE_INTEGRITY_AND_CLARITY_GATE.md` for the mandatory final lock, and `CHANNEL_CONSTITUTION.md` for identity and the eight-point filter.
+The other files are opened as needed — `LANGUAGE_AND_VOICE.md` for register questions, `FORMAT_LANES.md` for lane selection, `VIRAL_SOCIAL_COMMENTARY.md` for the one lane that overrides the default structure, `SOURCE_AND_FACT_RULES.md` for sourcing, `CHANNEL_CONSTITUTION.md` for identity and the eight-point filter. (The former source-integrity gate and story-shape lock were absorbed into the Stage 3 consolidated audit at v4.0; their pointer files were deleted at v4.1 — the rubric and its Legacy Map are the reference.)
 
 ## Canonical Files
 
@@ -22,12 +22,13 @@ The other files are opened as needed — `LANGUAGE_AND_VOICE.md` for register qu
 | `REFERENCE_SCRIPTS_CORE.md` | Condensed default calibration set (ten cited anchors). Loaded by stages 2-4. Subordinate to `REFERENCE_SCRIPTS.md`. |
 | `MASTER_RULE.md` | Reference hierarchy, core production rules, stage ownership. Read after the references. |
 | `CHANNEL_CONSTITUTION.md` | Channel identity, audience, the eight-point topic filter, and what the channel is not. |
-| `CONTEXT_PRIMER.md` | Compressed brief for fresh AI chats. Downstream summary of the canonical rules. |
+| `CONTEXT_PRIMER.md` | Compact identity brief for fresh AI chats; pointers to the owners. |
+| `OPERATIONS.md` (KB root) | Publishing cadence, rotation, proposed-lane promotion. Operator-only; no stage loads it. |
+| `CHANGELOG.md` | KB version history. History only; no stage loads it. |
 | `LANGUAGE_AND_VOICE.md` | The complete Indian English register, host voice, banned openings and words. |
-| `FORMAT_LANES.md` | Seven canonical lanes plus three proposed lanes. Lane-selection tiebreaker. Weekly cadence. |
+| `FORMAT_LANES.md` | Seven canonical lanes plus three proposed lanes. Lane-selection tiebreaker. |
 | `VIRAL_SOCIAL_COMMENTARY.md` | Full spec for the Viral Social Commentary lane. Calibrated by References 15 and 16. |
 | `SOURCE_AND_FACT_RULES.md` | Source hierarchy, fact-risk grades, verification discipline. |
-| `SOURCE_INTEGRITY_AND_CLARITY_GATE.md` | Mandatory five-pillar source, mechanism, authority-placement, first-listen-clarity, and freshness gate. |
 
 ## Stage-Owned Canonical Files
 
@@ -45,7 +46,7 @@ Resolve conflicts by decision ownership:
 - operational precedence and stage ownership → `MASTER_RULE.md`
 - voice/language → `LANGUAGE_AND_VOICE.md`
 - lane selection → `FORMAT_LANES.md` / `VIRAL_SOCIAL_COMMENTARY.md`
-- sourcing and lock safety → `SOURCE_AND_FACT_RULES.md` / `SOURCE_INTEGRITY_AND_CLARITY_GATE.md`
+- sourcing and lock safety → `SOURCE_AND_FACT_RULES.md` (single owner)
 - stage decisions → that stage's canonical guide/rubric/SOP
 - creative calibration only → `REFERENCE_SCRIPTS.md`
 

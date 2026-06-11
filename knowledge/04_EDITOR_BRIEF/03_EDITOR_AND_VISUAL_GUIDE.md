@@ -3,7 +3,7 @@ title: "Editor and Visual Guide"
 file: "03_EDITOR_AND_VISUAL_GUIDE.md"
 role: canonical
 canonical: true
-version: "v2.5"
+version: "v2.6"
 related: ["../00_SHARED_KB/LANGUAGE_AND_VOICE.md", "04_THUMBNAIL_DESIGN_SOP.md", "../00_SHARED_KB/FORMAT_LANES.md", "../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md", "../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md"]
 summary: "Canonical editing rules, post-recording delivery audit, audio mastering targets, captions, B-roll, graphics, and the mandatory quiet beat."
 keywords: ["editing", "visual", "delivery audit", "audio mastering", "LUFS", "captions", "B-roll", "graphics", "quiet beat", "pacing"]
@@ -46,7 +46,7 @@ Run this audit on every recording before locking the edit. It tests the host's d
 - Deliberate, not frantic
 - Visual changes happen because the content shifts, not to fight attention loss
 - Trust the writing
-- Aim for 10–14 meaningful visual beats per 90–120 second Anchor script
+- Aim for 10–14 meaningful visual beats per 60–120 second Anchor script
 - Every meaningful hook contrast, assumption reversal, key number, mechanism turn, and payoff should have visible support. Adjacent lines may share one visual idea; cuts follow story beats, not line count.
 - Avoid dead zones longer than 8–10 seconds with no visual change, except the mandatory quiet beat or solemn topics where stillness is intentional
 - Hold on the host's face during key reveals
@@ -128,6 +128,35 @@ The host's voice is the most important audio element.
 - Decorative scripts or display fonts
 - 3D extruded text
 - Glow effects on text
+
+## Visual Support For Below-Average English Comfort
+
+For this channel, visuals must help carry meaning.
+
+Assume some viewers may miss or not understand a spoken word (`../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Below-Average English Comprehension Rule`).
+
+Use burned-in subtitles on every spoken line (the auto-caption spec above is the style standard — captions are mandatory, not optional).
+
+Use simple visuals to explain hard ideas.
+
+Examples:
+
+| Voiceover Line | Visual |
+|---|---|
+| `In Belgium, there is a city called Antwerp.` | Simple map: Belgium → Antwerp |
+| `They were too small.` | Close-up of tiny uncut stones on a sorting table |
+| `So they sat in a corner, ignored.` | Small stones pushed aside on a table |
+| `And traders from Gujarat asked for exactly those stones.` | Indian traders looking over stones |
+| `sent them home. To Surat.` | Map line from Antwerp to Gujarat |
+| `They polished in rupees. And sold in dollars.` | Workshop in India → export invoice / dollar symbol |
+| `People they could trust with a bag of diamonds.` | Hand passing a small sealed packet |
+| `Loans given on trust, with no paperwork.` | Two men shaking hands |
+| `factories built to cut tiny stones` | Surat diamond workshop |
+| `the next diamond you see at a wedding` | Close-up of diamond jewellery at an Indian wedding |
+
+Do not make the voiceover explain everything.
+
+If the idea is abstract, the visual should make it concrete. The script's 2–3 required concrete images (per the Concrete Image Rule) are the priority beats for visual support.
 
 ## Format Signature Text Events
 

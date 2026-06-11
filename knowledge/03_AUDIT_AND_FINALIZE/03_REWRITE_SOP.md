@@ -3,7 +3,7 @@ title: "Rewrite and Finalization SOP"
 file: "03_REWRITE_SOP.md"
 role: canonical
 canonical: true
-version: "v2.13"
+version: "v2.15"
 related: ["../02_SCRIPT_CREATION/04_SCRIPT_DRAFTING_GUIDE.md", "03_AUDIT_RUBRIC.md", "../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md", "../00_SHARED_KB/SOURCE_AND_FACT_RULES.md"]
 summary: "Canonical rewrite triggers, Viral Social Commentary lane repair, fact-check workflow with named ownership and source bar, and the final approval checklist."
 keywords: ["rewrite", "finalization", "viral social commentary", "fact-check", "ownership", "source bar", "correction protocol", "approval checklist", "fact-risk"]
@@ -15,7 +15,7 @@ keywords: ["rewrite", "finalization", "viral social commentary", "fact-check", "
 
 Rewrite when a Short:
 
-- Scores 6.0–7.9 overall
+- Grades **Generic**, or **Good but needs polish** with structural flags
 - Has a strong topic and clean hook/payoff potential, but weak execution
 - Has good bones but soft hook, generic middle, or flat ending
 - Has correct strategy but forced language (forced Hindi or forced English) or wrong tone
@@ -27,8 +27,8 @@ Rewrite when a Short:
 
 Reject when a Short:
 
-- Scores below 5.5
-- Fails multiple categories of the 8-Point Shorts Validation
+- Grades **Reject**
+- Fails multiple consolidated checks
 - Belongs to a different category entirely (long-form documentary-explainer, news anchor, hype channel)
 - Has high external-creator clone risk (same topic packaging, hook rhythm, sponsor pivot, close, or visual grammar)
 - Requires an AI-owned regeneration because line-level rewrite would preserve the wrong structure
@@ -41,8 +41,7 @@ If the package lacks a Stage 1 mental model, do not invent one in Part B. Carry 
 ## When to Keep Mostly Untouched
 
 Keep with minor edits only when:
-- Score is 8.0+
-- All 12 categories are 7+ with no failures, all 19 failure modes clear, the Story-Shape Lock passes 4/4, and Viral Social Commentary overlay passes if applicable
+- Verdict is **Strong** — all 16 consolidated checks PASS, and the Viral Social Commentary overlay passes if applicable
 - Fact-check is clean
 - The Short feels distinctly like our channel
 
@@ -135,7 +134,7 @@ Use this when the script is accurate and structured but feels like a documentary
 
 Recalibrate against `../00_SHARED_KB/REFERENCE_SCRIPTS.md § Anchor Short References`. Keep the rewrite spoken, restrained, high-retention, and topic-earned; Anchor Short is not permission to become essay-like or over-intellectual.
 
-Do not preserve the structure by default. Preserve verified facts, the strongest source-backed narrative asset, and the payoff. Rebuild around the **4-test detector** in `03_AUDIT_RUBRIC.md § Lite Audit § Pass 2 § Failure Mode 7 (a)-(d)`:
+Do not preserve the structure by default. Preserve verified facts, the strongest source-backed narrative asset, and the payoff. Rebuild around the evidence tests in `03_AUDIT_RUBRIC.md § Required Evidence (a)–(d)`:
 
 1. **Hook (a):** a single-line declarative or a 2-3 line stack — both valid. Line two may prove, sharpen, or open the causal promise; concrete support must arrive immediately after. Quote the new hook, and confirm it does not over-claim beyond the facts.
 2. **Spoken cadence (b):** ensure at least 2 lines have clearly spoken cadence — short declaratives, spoken connectives ("And", "But", "So", "Because") intact, syntax natural-verbal not written-formal. Quote 2 such lines. Restrained, never performed: NO reaction-acting tics ("Bas.", "Right?", "But honestly?", "Sounds boring."), NO Hindi or Hinglish. The register is complete Indian English.
@@ -151,19 +150,19 @@ Additional rewrite mechanics that v2.7 requires:
 - **Soft hedges for known uncertainty** — "scientists believe", "appears to", "estimates suggest" belong where the source-backed claim is genuinely uncertain. They are not a substitute for sourcing.
 - **Accurate payoff verbs** — prefer verbs that land emotionally without implying a fact the source does not make.
 - **Em-dash parenthetical definitions** → break onto their own line.
-- **24-40 vertical spoken lines** for a 90-120s Anchor Short — not 5-8 paragraphs.
+- **Ear-first vertical lines** — break any glued 2+-sentence paragraph block into spoken thoughts. There is no fixed line count; the references are paragraph-shaped prose with periodic single-line punches. The 3-Line Article-Feel Test is the real check.
 
 The rewrite should still explain clearly. It should stop sounding like a neat article summary.
 
 **Status: PRODUCTION-READY is forbidden until every (a)-(c) test passes with quoted evidence.** A rewrite that fixes facts and structure but leaves Polished Explainer Drift in place is a status NEEDS-ANOTHER-PASS regression, not a finalization.
 
-### Also repair these on rewrite (failure modes 19-22 + 10, v2.11)
+### Also repair these on rewrite
 
-- **Self-Clone / Sameness (19):** strip proper nouns; if the skeleton matches a recent Short, rebuild from this topic's own contradiction. Vary the closer shape from the last two Shorts (no back-to-back two-part inversion closes).
-- **Thesis-Hammer / Repetition (20):** state the thesis once strong + once at the close; cut every restatement in between. The middle carries new facts only.
-- **Hook Over-Claim (10):** soften any hook that claims more than the body's facts support.
-- **Contested-Claim-as-Settled (21):** attribute contested academic/historical readings as named arguments, not fact.
-- **Unnamed Authority (22):** make the source checkable. Speak a recognizable/story-central authority; otherwise speak the study shape and put the full citation on-screen/in notes.
+- **Self-Clone / Sameness (PATTERN-FRESHNESS):** strip proper nouns; if the skeleton matches a recent Short, rebuild from this topic's own contradiction. Vary the closer shape from the last two Shorts (no back-to-back two-part inversion closes).
+- **Thesis-Hammer / Repetition (PATTERN-FRESHNESS):** state the thesis once strong + once at the close; cut every restatement in between. The middle carries new facts only.
+- **Hook Over-Claim (HOOK):** soften any hook that claims more than the body's facts support.
+- **Contested-Claim-as-Settled (CONTESTED-CLAIMS):** attribute contested academic/historical readings as named arguments, not fact.
+- **Unnamed Authority (AUTHORITY):** make the source checkable. Speak a recognizable/story-central authority; otherwise speak the study shape and put the full citation on-screen/in notes.
 - **Hard-number gate:** every specific figure carries a source + date in fact-check notes, or it is softened/cut.
 - **Mental-math gate:** first five seconds carry at most one numerical relationship; no adjacent denominator/reference switch.
 - **Temporal-freshness + current-function gate:** re-fetch every "latest/currently/today/this year" claim at lock, and every exact older-period fact used as present proof.
@@ -194,11 +193,11 @@ Use this when Stage 3 flags the Viral Social Commentary overlay, or when the top
 
 ## How to Fix Compression Drift (Underdeveloped Surface Logic and Mechanism Collapse)
 
-Use this when Stage 3 flags **Failure Mode 13 (Underdeveloped Surface Logic)** or **Failure Mode 14 (Mechanism Collapse)** in the Lite Audit.
+Use this when Stage 3 flags the **STRUCTURE** check (underdeveloped surface logic) or the **MECHANISM** check (mechanism collapse).
 
 These two modes share a common root: the script prioritised brevity in the wrong place. The fix requires adding room back to the beats that need it — not trimming further.
 
-### Fixing Underdeveloped Surface Logic (Mode 13)
+### Fixing Underdeveloped Surface Logic (STRUCTURE)
 
 **Trigger:** Stage 3 found fewer than 3 specific reasons why the viewer's intuitive belief was reasonable before the script contradicted it.
 
@@ -217,7 +216,7 @@ These two modes share a common root: the script prioritised brevity in the wrong
 ✅ "You can see the water level. / You can see dirt building up. / You can catch motor overflow. / A transparent tank seems smarter in every practical way." — four distinct reasons, each specific.  
 ❌ "You can see the level and the dirt." — two reasons compressed to one line. Setup has no weight.
 
-### Fixing Mechanism Collapse (Mode 14)
+### Fixing Mechanism Collapse (MECHANISM)
 
 **Trigger:** Stage 3 found that two or more distinct causal mechanisms were merged into a single explanation, making the reveal incomplete.
 
@@ -239,13 +238,13 @@ These two modes share a common root: the script prioritised brevity in the wrong
 
 ### General Rule for Both Modes
 
-When Stage 3 flags Mode 13 or 14, the default rewrite instinct (tighten, compress, cut) is the wrong instinct. **Prioritise causal completeness over brevity.** The brevity rule from the drafting guide applies to filler, repetition, and padding — it does not apply to load-bearing causal steps. If a line is the only place a mechanism is explained, it stays.
+When Stage 3 flags either failure, the default rewrite instinct (tighten, compress, cut) is the wrong instinct. **Prioritise causal completeness over brevity.** The brevity rule from the drafting guide applies to filler, repetition, and padding — it does not apply to load-bearing causal steps. If a line is the only place a mechanism is explained, it stays.
 
 ## How to Fix Final-Rule and Context Drift
 
-Use this when Stage 3 flags **Failure Mode 16 (Final-Rule Oversimplification)** or **Failure Mode 17 (Labelled-Not-Concrete Indian Context)**.
+Use this when Stage 3 flags the **PAYOFF** check (final-rule oversimplification) or the **INDIAN-RELEVANCE** check (labelled-not-concrete context).
 
-### Fixing Final-Rule Oversimplification (Mode 16)
+### Fixing Final-Rule Oversimplification (PAYOFF)
 
 **Trigger:** The script corrected the viewer's original belief but left a new shortcut in its place.
 
@@ -257,7 +256,7 @@ Use this when Stage 3 flags **Failure Mode 16 (Final-Rule Oversimplification)** 
 ✅ "Black is not magic. White tanks can also work — if they block sunlight. The real rule is: sunlight should not enter your stored water."  
 ❌ "Black tanks are better." — category answer, not the rule.
 
-### Fixing Labelled-Not-Concrete Indian Context (Mode 17)
+### Fixing Labelled-Not-Concrete Indian Context (INDIAN-RELEVANCE)
 
 **Trigger:** The script says "Indian", "terrace", "desi", or similar labels without a concrete lived picture.
 
@@ -285,7 +284,7 @@ If the register has drifted into documentary or academic:
 - Replace with the plain English equivalent the script needs.
 - Calibrate against `../00_SHARED_KB/REFERENCE_SCRIPTS.md` for voice and cadence.
 
-**If Vocabulary Drift (Failure Mode 18) is flagged:**
+**If Vocabulary Drift (COMPREHENSION — word level) is flagged:**
 
 The issue is not register drift — it is vocabulary difficulty. The fix is not to change sentence rhythm; it is to replace or define specific words.
 
@@ -293,7 +292,30 @@ The issue is not register drift — it is vocabulary difficulty. The fix is not 
 2. For each failing word, apply the swap table in `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark`, or write an immediate inline definition on the same line ("Nitrogen is inert — it does not react with food").
 3. The definition must be spoken and immediate. Prefer the same line; the next short line may define the term when no other idea intervenes.
 4. Default to one necessary technical term. Additional essential terms are allowed only when each is immediately explained in plain English; never use an undefined second term as a workaround.
-5. After fixing, re-run Gate 5 of the Lite Audit and Category 6 of the Full Rubric.
+5. After fixing, re-run the COMPREHENSION check.
+
+## Accessibility Repair Order
+
+If a script fails the audience-English check (COMPREHENSION — Audience-English Accessibility Gate), repair it in this order:
+
+1. Remove difficult words.
+2. Replace trade jargon with common words.
+3. Break long sentences.
+4. Cushion hard names.
+5. Replace abstract ideas with concrete images.
+6. Simplify the mechanism into cause-effect steps.
+7. Separate the script into anchor-readable beat blocks.
+8. Keep the final payoff simple and relatable.
+
+Do not reduce factual accuracy.
+
+Do not make the tone childish.
+
+Do not add Hinglish or slang.
+
+Do not add motivational filler.
+
+Do not rewrite strong sentences only to make them look different.
 
 ## How to Improve Indian / South Asian Relevance
 
@@ -362,7 +384,7 @@ Fact-check is the single highest-risk operational step. This section names owner
 - Step 2: Script passes audit (per `03_AUDIT_RUBRIC.md`).
 - Step 3: Part B of Stage 3 creates the final verification queue from the audit's Fact-Check Risks.
 - Step 4: Part B of Stage 3 confirms every flagged claim against the source hierarchy or removes the claim.
-- Step 4a: For every load-bearing cited claim, fill the **Source Dossier** (`../00_SHARED_KB/SOURCE_INTEGRITY_AND_CLARITY_GATE.md § The Source Dossier`) by fetching the source itself — outlet, author, year, document type, verbatim finding, resolving URL, accessed date. A dossier row that cannot be filled because the source will not fetch means the claim is unverified: re-source, soften, or cut (no-fetch, no-lock). Upstream Stage-1 notes are leads, never proof.
+- Step 4a: For every load-bearing cited claim, fill the **Source Dossier** (`../00_SHARED_KB/SOURCE_AND_FACT_RULES.md § The Source Dossier`) by fetching the source itself — outlet, author, year, document type, verbatim finding, resolving URL, accessed date. A dossier row that cannot be filled because the source will not fetch means the claim is unverified: re-source, soften, or cut (no-fetch, no-lock). Upstream Stage-1 notes are leads, never proof.
 - Step 4b: If the script is **Sensitive-tier** (medical/legal/financial advice or safety claims; party-political claims; named-individual/company allegations; contested, reputationally harmful, or high-risk claims — per `../00_SHARED_KB/SOURCE_AND_FACT_RULES.md § Source Discipline`), the dossier must be filled by a verification pass independent of the writer and auditor. Routine business mechanisms and neutral company results may have Part B fill it directly.
 - Step 4c: Re-fetch every time-relative claim ("latest", "currently", "today", "this year", "now") and every exact older-period fact used as present proof on the finalization date. Prefer exact reporting periods.
 - Step 4d: For a Major rewrite, run a separate narrative-evidence search and record the source-backed scene/event/decision/contrast used to preserve story force.
@@ -398,7 +420,7 @@ For every flagged or load-bearing claim:
 
 ## How to Preserve Strong Scripts Without Over-Editing
 
-When a Short scores 8.0+:
+When a Short grades Strong:
 
 - Identify the 1–3 specific lines flagged.
 - Preserve strong lines and avoid churn.
@@ -410,7 +432,7 @@ Over-editing strong Shorts is the most common quality regression.
 
 ## When Minor Edits Are Wasted
 
-Sometimes a Short scoring 6.5–7.0 is not worth editing. Edit only when:
+Sometimes a borderline-Generic Short is not worth editing. Edit only when:
 
 - The hook + payoff combo is genuinely strong
 - The structural beats are mostly correct
@@ -489,7 +511,7 @@ Thumbnail text: [3–5 words, all caps]
 Hook / Hook stack: [The 1–5 second opening, 1–3 short spoken lines]
 Payoff one-liner: [The line the viewer leaves with]
 Mental model / framework: [Stage 1 model, ≤8 words, or N/A — optional bonus]
-Final spoken script: [Full Anchor script, 230–280 words]
+Final spoken script: [Full Anchor script, 200–280 words]
 Host tone: Energy [1–10]. [Delivery notes, register calibration.]
 Editor notes: [Beat-by-beat visual direction.]
 Fact-check notes: [Each claim requiring verification.]
@@ -497,42 +519,17 @@ Fact-check notes: [Each claim requiring verification.]
 
 ## Final Approval Checklist
 
-Before any Short enters production:
+The 16 named checks in `03_AUDIT_RUBRIC.md` (plus the Viral Social Commentary overlay when applicable) are the quality gate. They are verified in the Section II § 14 cold-read and are **not re-listed here** — re-checking them as boxes invites checkbox fatigue. This checklist covers only what the named checks do not:
 
-- [ ] **SOURCE INTEGRITY AND AUDIENCE CLARITY GATE passed (all 5 pillars PASS)** — source integrity, mechanism honesty, authority placement, instant clarity including mental math, and temporal freshness.
-- [ ] Hook stack lands in 1–5 seconds (no greeting, no "did you know")
-- [ ] Hook uses the strongest available source-backed story asset and concrete story carrier, or documents why another opening is more watchable
-- [ ] Pictureability Test passes: the carrier can be shown without writing the thesis on screen
-- [ ] Human-choice mechanisms include an observable behaviour chain
-- [ ] First five seconds carry at most one numerical relationship; no denominator/reference switch
-- [ ] Format lane is declared and the Short clearly fits it (or one-off is justified)
-- [ ] Curiosity gap is sharp
-- [ ] Payoff is clean and memorable
-- [ ] Retention flow holds (new beat every 3–6 seconds)
-- [ ] Easy to follow at scroll speed
-- [ ] Plain Word Test passed: every word is accessible to a Class 10–12 educated Indian reader, or is immediately defined inline (per `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark`)
-- [ ] Identity is present in language, framing, or delivery (complete Indian English, dry, casually confident)
-- [ ] Indian relevance is natural (or correctly absent)
-- [ ] No banned words in title, thumbnail, or script
-- [ ] No catchphrases or channel name spoken inside the video
-- [ ] Language is complete Indian English throughout; no Hindi or Hinglish
-- [ ] Length within Anchor band (90–120s / 230–280 words; minimum 90s; hard ceiling 120s)
-- [ ] All claims are sourceable
-- [ ] Ending lands with a strong takeaway, not a generic CTA
-- [ ] Tone matches the topic's register
-- [ ] Editor notes are clear enough to execute
-- [ ] Fact-check notes flag every risky claim
-- [ ] No motivational drift in closing line
-- [ ] No host-as-expert framing
-- [ ] Stage 1 mental model is natural and not forced when present; N/A is allowed
-- [ ] Final rule is accurate and does not create a new oversimplification
-- [ ] Indian context is concrete when present, not just labelled
-- [ ] External-creator clone risk is low or explicitly solved in hook, framing, language, close, or visuals
-- [ ] Polished Explainer Drift and Narrative-Force regression are absent: 4-test detector passes (`03_AUDIT_RUBRIC.md § Failure Mode 7 (a)-(d)`)
-- [ ] Authority + numbers clear: evidence is checkable, only viewer-useful authorities are spoken, contested claims are attributed, hard numbers are sourced, and mental-math/reference stability passes
-- [ ] Every time-relative claim and every exact older-period fact used as present proof was freshly rechecked at final lock
-- [ ] If Major rewrite: Rewrite Regression Check passes and cold-read final audit is recorded
-- [ ] Viral Social Commentary overlay passes when applicable: Side A, Side B, wage / price / behaviour math, direct viral evidence, discomfort, and viewer-verdict close are all present
-- [ ] Voice + story evidence (v3.3): final hook, spoken cadence, Article-Feel Test, and Narrative-Force evidence are quoted
+- [ ] **Word count verified numerically:** strip every delivery cue and count — 200–280 words / 60–120 seconds. State the count in § 8.
+- [ ] **Delivery cues present and valid:** only the seven canonical tokens (`[direct]`, `[no smile]`, `[stress]`, `[slow]`, `[drop voice]`, `[beat]`, `[pause]`); opens on `[direct]`; the closer carries `[drop voice]`; roughly one cue per one-to-three spoken lines; the script reads perfectly with cues stripped.
+- [ ] Format lane declared and clearly fits (or One-off justified in the brief); proposed-lane labels preserved through the handoff.
+- [ ] Title ≤60 characters and thumbnail text ≤5 words, both free of banned words.
+- [ ] Editor notes are clear enough to execute without questions.
+- [ ] Fact-check notes cover every load-bearing claim; nothing left `Needs verify` (verify, soften, or cut).
+- [ ] If Major rewrite: Rewrite Regression Check passed and the cold-read final audit is recorded.
+- [ ] Best-Available-Version comparison recorded when a materially different safe treatment existed.
+- [ ] Viral Social Commentary overlay passed when applicable — including topic-native Beat 5 wording (no "inside their own X" reference clone).
+- [ ] Slate Ledger row emitted: date | topic | lane | hook shape | pivot shape | closer shape | mid-script template.
 
 If any box is unchecked, repair the script before returning. Use `Status: NEEDS-ANOTHER-PASS` only when a true terminal issue cannot be verified, softened, reframed, or cut.

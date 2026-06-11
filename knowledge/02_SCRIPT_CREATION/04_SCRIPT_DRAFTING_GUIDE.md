@@ -3,7 +3,7 @@ title: "Script Drafting Guide (Narrative Functions)"
 file: "04_SCRIPT_DRAFTING_GUIDE.md"
 role: canonical
 canonical: true
-version: "v2.14"
+version: "v2.16"
 related: ["../01_TOPIC_EVALUATION/04_TOPIC_VALIDATION_GUIDE.md", "../00_SHARED_KB/VIRAL_SOCIAL_COMMENTARY.md", "../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md", "../03_AUDIT_AND_FINALIZE/03_REWRITE_SOP.md", "../00_SHARED_KB/REFERENCE_SCRIPTS.md"]
 summary: "Canonical narrative functions, story-first hook rules, mental-math clarity, spoken rhythm, credibility rules, and final script template."
 keywords: ["script", "SOP", "narrative functions", "hook", "payoff", "CTA", "length", "output template", "drafting", "sentence style"]
@@ -58,16 +58,51 @@ Strict rules during drafting:
 - **Vocabulary ceiling (mandatory):** The assumed viewer is a **Class 10–12 educated Indian metro reader**, not an engineer or MBA. Before returning any draft, run the Plain Word Test from `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Reader Benchmark`: scan every line and ask "would I use this word in a WhatsApp voice note to a college friend?" If no, replace it or explain it immediately. Prefer the same line; the next short line may define it when no other idea intervenes.
 - **Instant Comprehension Gate (mandatory, phrase-level):** The Plain Word Test catches hard *words*; it does not catch hard *phrasing*. A line built from easy words can still be unclear on first listen if it carries source-register phrasing. Before returning any draft, run the Instant Comprehension Gate from `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § The Instant Comprehension Gate` on every line: *"Will an average Indian viewer understand this immediately, on first listen, without pausing, Googling, or needing outside context?"* If no — rewrite into viewer-language per `§ Source-Language vs Viewer-Language`: move citation furniture (journal names, study IDs) to on-screen text, gloss any institution the viewer cannot place ("the Smithsonian" → "the Smithsonian, America's biggest museum group"), and replace report register ("records the outcome plainly") with spoken register. **Translate source wording, do not transplant it.** The frozen source notes protect facts, not phrasing — re-phrasing is required, not optional, as long as the fact stays exact.
 - **Mental Math and Reference Stability (mandatory):** Plain words can still require too much mental work. Use at most one numerical relationship in the first five seconds. Do not place adjacent ratios with different denominators/reference groups unless the second line explicitly resets the comparison. Move the second number later or on-screen.
-- **Story-before-receipts gate:** When Stage 1 names a verified scene, person, decision, conflict, object, or contrast, using that asset in the hook, setup, or core mechanism scene is the default. A ratio/receipt-first opening may pass only when the best-treatment comparison documents why it creates stronger curiosity with lower cognitive load. Numbers support the story; they do not automatically make the strongest hook. A draft that leaves the named asset unused without this justification fails Gate 9 and must be rewritten.
+- **Hook-shape tie-breaker (formerly "story-before-receipts"):** The sharp declarative claim is the reference-majority opening and is always a valid default — it is never a defect to "upgrade." When Stage 1 names a verified scene, person, decision, conflict, object, or contrast, treat it as a **co-equal candidate**, not the default: sketch both the declarative open and the asset-led open, keep whichever creates stronger immediate curiosity at lower cognitive load, and note the choice in one line. Dropping the named asset from the script entirely (hook, setup, and mechanism) still requires a one-line justification. Numbers support the story; a receipt with no tension is not a hook.
 - **Concrete-carrier gate:** Use the Stage 1 concrete story carrier to make the mechanism visible. A carrier may be a sourced scene or a clearly illustrative viewer-world scene/comparison that invents no specific event, quote, motive, company action, or measured result. A source finding or thesis is not a carrier merely because it is true. When the mechanism depends on comparison, selection, or relative price, show the options or reference point. Run the Pictureability Test: could the editor show the carrier without writing the thesis itself on screen? If no, rebuild it.
 
 If any of these slip in, rewrite.
+
+## Drafting Rule: Simple Mechanism, Simple English
+
+The audience assumption is fixed (`../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Below-Average English Comprehension Rule`): a curious, modern viewer who may have below-average English comfort. During drafting, explain the mechanism in simple cause-effect steps.
+
+Use this structure:
+
+1. What was the problem?
+2. Who noticed it?
+3. What did they do differently?
+4. Why did it work?
+5. What changed because of it?
+
+Do not use abstract mechanism words if a simple sentence can explain the same idea.
+
+Bad:
+
+`Surat captured the low-value processing segment through labour-cost arbitrage and community credit.`
+
+Better:
+
+`A stone that lost money in Belgium made money in India. They polished in rupees. And sold in dollars. But it was not only cheap work. It was family networks.`
+
+Before finalizing the draft, remove:
+
+- trade jargon
+- business jargon
+- academic words
+- long comma chains
+- abstract mechanism phrasing
+- clever lines that are not instantly understandable
+
+Cushion every hard name on first mention (`In Belgium, there is a city called Antwerp.`) and never stack multiple unfamiliar names in one line.
+
+**Final formatting:** deliver the script as anchor-readable beat blocks. One narrative beat per block; each block holds 1–4 short sentences that belong to the same beat; a new block starts when the story turns; blank line between blocks. Never one dense paragraph — and never one sentence per block throughout (that is the fragment-poem failure). The anchor must be able to read each block in one breath, with hook, reveal, mechanism, scale, and payoff visually separated. Calibration fixture: `../03_AUDIT_AND_FINALIZE/KB_REGRESSION_TESTS.md § Case 25`.
 
 ## High-Retention Indian Shorts Spoken Rhythm (canonical, v2.12)
 
 Target: premium Indian YouTube Shorts with Anchor-level restraint and payoff. The script is a teleprompter, not an article. Anchor Short References are the voice/rhythm target. A Short should read like a smart Indian metro friend telling you the most interesting version of a true thing — at scroll speed, with rhythm, not paragraphs.
 
-The system fails when a script is factually clean but reads as a long-form documentary-explainer or magazine-article paragraph chopped into short lines. Apply the rules below to all Anchor Shorts. The audit rubric in `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md` § Pass 2 Failure Mode 7 enforces these rules with quoted-evidence checks — so a script that misses any of them will be routed back to rewrite even when the structure and facts are clean.
+The system fails when a script is factually clean but reads as a long-form documentary-explainer or magazine-article paragraph chopped into short lines. Apply the rules below to all Anchor Shorts. The audit rubric in `../03_AUDIT_AND_FINALIZE/03_AUDIT_RUBRIC.md` (the VOICE check + Required Evidence (a)–(d)) enforces these rules with quoted-evidence checks — so a script that misses any of them will be routed back to rewrite even when the structure and facts are clean.
 
 ### Hook (single-line or stack — both fully valid)
 
@@ -122,7 +157,7 @@ Citation furniture used only to prove a claim ("WHO says...", "BIS says...", "Gu
 
 ### Vertical Line Count
 
-A 90–120s Anchor Short should be **24–40 vertical spoken lines**, not 5–8 paragraphs. If your draft contains paragraphs of 2+ sentences glued together, you have written an article. Break them.
+Write for the ear: one spoken thought per line, with single-line punches where they land. **There is no fixed line count** — the references are paragraph-shaped prose with periodic one-line punctuation. The real test is the 3-Line Article-Feel Test below: if your draft contains paragraphs of 2+ sentences glued together that join into magazine prose, break them. Do not pad to hit a count; do not fragment healthy sentences into stubs.
 
 ### Curiosity Ladder (retention by information, not by tics)
 
@@ -171,22 +206,15 @@ If yes — you have written an article. Break it, add connectives, add a reactio
 
 Run this test on the densest 3 lines of the reveal. That is where the drift always hides.
 
-### Spoken-Rhythm Completion Test
+### Spoken-Rhythm Completion Test (drafting-owned items only)
 
-Before submitting, the draft must satisfy:
+Before submitting, confirm the five rhythm items that drafting owns. Everything else — repetition discipline, authority placement, hedge discipline, payoff verb register, self-clone vs the ledger — is Stage 3's audit; do not pre-run it here (per `01_PROMPT.md § Writer's Lock`).
 
-- single-line hook or 2-3 line stack, with line two proving, sharpening, or opening the causal promise; hook survives the most-informed viewer (no over-claim)
-- one specific per setup line; no named source attributions in setup
-- 24-40 vertical spoken lines for a 90-120s Anchor Short
-- a new fact or contradiction every few seconds (retention by information, not reaction-tease tics)
-- spoken texture used sparingly: at most one parallel triplet, fragments not overused, NO reaction-acting tics, NO Hinglish
-- thesis stated once strong + once at the close, never hammered in between (Repetition Discipline)
-- every claim of evidence is checkable; speak the authority only when it adds viewer value, otherwise speak the study shape and show the full citation on-screen
-- first five seconds carry at most one numerical relationship; no denominator/reference switch
-- soft hedges only for source-backed uncertainty
-- payoff language that stays accurate while landing emotionally
-- 3-Line Article-Feel Test result on the densest reveal lines
-- if Viral Social Commentary: Side A, Side B, wage/price/behaviour math, direct viral evidence, discomfort, and the three-beat close (compressed insight + stakes-naming viewer question + named-audience share)
+- single-line hook or 2–3 line stack, with line two proving, sharpening, or opening the causal promise; no over-claim; at most one numerical relationship in the first five seconds (Writer's Lock 1)
+- one cognitive anchor or action per setup line; no citation furniture in setup
+- written for the ear: no glued 2+-sentence paragraph blocks AND no fragment-poem — run the 3-Line Article-Feel Test on the densest reveal lines
+- retention by information: a new fact or real contradiction every few seconds; no reaction-tease tics, no Hinglish
+- if Viral Social Commentary: Side A, Side B, the wage/price/behaviour math, direct viral evidence, and the three-beat close are present — with Beat 5 in topic-native wording, never the "inside their own X" reference construction
 
 If any item is not satisfied, rewrite the affected beat.
 
@@ -357,11 +385,11 @@ Use `../00_SHARED_KB/SOURCE_AND_FACT_RULES.md`. This bar does not relax because 
 
 ## Length Rules
 
-- **Anchor Short:** 90–120 seconds spoken, 230–280 words (hard ceiling 280).
+- **Anchor Short:** 60–120 seconds spoken, 200–280 words (hard ceiling 280).
 - **Minimum:** 90 seconds.
 - **Hard ceiling:** never run past 120 seconds for any Short.
 
-Use **90–105 seconds** when the topic is a single sharp fact, contradiction, or observation.
+Use **60–105 seconds** when the topic is a single sharp fact, contradiction, or observation.
 Use **105–120 seconds** when the topic needs more breathing room, a stronger build, or a more meaningful payoff.
 
 Pick the shortest length that still lands the payoff. If a topic needs more than 120 seconds, plan long-form instead.
@@ -373,7 +401,7 @@ Pick the shortest length that still lands the payoff. If a topic needs more than
 - Avoid compound sentences with multiple clauses
 - Sentence fragments allowed for emphasis
 - Spoken English — not written English
-- Write vertically: one spoken thought per line
+- Ear-first prose, not a fragment poem: the references are paragraph-shaped prose with periodic single-line punches. Break glued 2+-sentence blocks, but never shatter healthy sentences into stub lines — a script chopped into dozens of fragments fails VOICE exactly as article prose does. The 3-Line Article-Feel Test is the check in both directions.
 - Don't say "in other words" or restate
 - Cut written-language filler (in other words, basically, it should be noted that). Keep spoken-language connectives ('And', 'But', 'So', 'Because') at line-starts even if technically removable — they are spoken-rhythm load-bearing. ('Right?', 'Honestly?', 'But honestly?' are reaction-tease tics, NOT connectives — banned per `../00_SHARED_KB/LANGUAGE_AND_VOICE.md § Banned Creator Tics`.)
 
